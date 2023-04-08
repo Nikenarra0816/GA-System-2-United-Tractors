@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button-okesalah</name>
+   <tag></tag>
+   <elementGuidId>115c7356-a15a-47bd-9bcf-e880068afcd7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__layout']/div/div/div/div/div[4]/div/div[2]/div[2]/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a20a5d81-f5b3-4172-b9d1-d727106e831f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-1/2 px-4 py-2 border text-sm bg-white outline-none rounded text-red-500 border-red-500</value>
+      <webElementGuid>8f13db78-7528-4007-98b0-776e3fc5dd22</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Oke</value>
+      <webElementGuid>b06a142b-865a-4658-8e19-83b72a02f59d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont&quot;]/div[@class=&quot;bg-white&quot;]/div[1]/div[@class=&quot;flex flex-row relative&quot;]/div[4]/div[@class=&quot;vm--container&quot;]/div[@class=&quot;vm--modal&quot;]/div[@class=&quot;text-blk px-4&quot;]/div[@class=&quot;flex justify-center my-5&quot;]/button[@class=&quot;w-1/2 px-4 py-2 border text-sm bg-white outline-none rounded text-red-500 border-red-500&quot;]</value>
+      <webElementGuid>c7cb082c-b0a3-4c74-8d0c-7de26a680e7c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/div/div/div/div[4]/div/div[2]/div[2]/div/button</value>
+      <webElementGuid>f9454636-f74c-4da9-8bec-63bc8d532448</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/following::button[1]</value>
+      <webElementGuid>7dc77d0f-b55b-4290-829c-2caceaa5e6d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='forgot password?'])[1]/following::button[2]</value>
+      <webElementGuid>f657a347-6b66-4690-8a34-b8932fab5100</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
+      <webElementGuid>07732b96-38ff-4c92-b971-4e895512580d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
+      <webElementGuid>0189f83b-b660-4ee2-8394-e78f6c7c6de5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Oke']/parent::*</value>
+      <webElementGuid>3357b323-2627-4602-a2d1-f44396d896da</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/button</value>
+      <webElementGuid>be0c2898-740f-43e0-bce1-1efb0329bd70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Oke' or . = 'Oke')]</value>
+      <webElementGuid>161e8c69-ccfd-4cb2-8e81-1867cbea28f2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

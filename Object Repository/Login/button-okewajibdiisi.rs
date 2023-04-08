@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button-okewajibdiisi</name>
+   <tag></tag>
+   <elementGuidId>80e7e86e-40cc-4954-9742-9a8f7aa1e996</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__layout']/div/div/div/div/div[4]/div/div[2]/div[2]/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>bf29bd3d-2dc6-428b-bf05-92a0c9ca8164</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-1/2 px-4 py-2 border text-sm bg-white outline-none rounded text-red-500 border-red-500</value>
+      <webElementGuid>82c61f40-4291-4013-86a1-2dd41071c60a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Oke</value>
+      <webElementGuid>c528cebf-2ef0-4a7f-8fba-97fabf618f17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont&quot;]/div[@class=&quot;bg-white&quot;]/div[1]/div[@class=&quot;flex flex-row relative&quot;]/div[4]/div[@class=&quot;vm--container&quot;]/div[@class=&quot;vm--modal&quot;]/div[@class=&quot;text-blk px-4&quot;]/div[@class=&quot;flex justify-center my-5&quot;]/button[@class=&quot;w-1/2 px-4 py-2 border text-sm bg-white outline-none rounded text-red-500 border-red-500&quot;]</value>
+      <webElementGuid>8843b6d4-812c-4573-a98d-1d3b98c913d7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/div/div/div/div[4]/div/div[2]/div[2]/div/button</value>
+      <webElementGuid>00f9c2f8-1a60-42e2-b36a-2d55da17b238</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Login'])[1]/following::button[1]</value>
+      <webElementGuid>60ba1a90-d4e3-45fa-9612-ac1ae6b67240</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='forgot password?'])[1]/following::button[2]</value>
+      <webElementGuid>ff385b0c-3189-4c63-a2dc-85a1b3dd596c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
+      <webElementGuid>b8795b4c-a1c0-413a-b50a-594e7ff8aa68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
+      <webElementGuid>e7bec5a7-362e-430c-a504-4d7f760651ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Oke']/parent::*</value>
+      <webElementGuid>309df724-3e6b-4948-957d-3979652a84f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/button</value>
+      <webElementGuid>fe7e6583-1620-43ad-9c68-0fe46647dda0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Oke' or . = 'Oke')]</value>
+      <webElementGuid>002694a9-1a5f-48e2-8089-aca439550e82</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
