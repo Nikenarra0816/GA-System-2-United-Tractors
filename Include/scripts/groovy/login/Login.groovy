@@ -76,7 +76,7 @@ class Login {
 		WebUI.setEncryptedText(findTestObject('Login/field-password'), password)
 	}
 	
-	@Then("I see my home pages")
+	@Then("I see my home page")
 	def seeHomePage() {
 		WebUI.check(findTestObject('Login/home-page'))
 	}

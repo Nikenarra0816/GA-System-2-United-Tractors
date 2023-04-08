@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>7ed4db20-b094-4116-bcef-961822d33dec</webElementGuid>
+      <webElementGuid>9d48d18f-b65c-45f5-a333-f27bdd9ed252</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/tender</value>
-      <webElementGuid>ac9db95f-3f1a-4365-ae2f-240a224aeea9</webElementGuid>
+      <webElementGuid>a4d0e582-5b53-43a8-afe8-e1000f3dbc66</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ml-4 px-3 py-1 text-sm font-medium text-blk-light focus:outline-none</value>
-      <webElementGuid>95ca7a34-fd09-4230-9b5f-4e5f91ec34f4</webElementGuid>
+      <webElementGuid>a6a8e79e-457b-4694-9a7b-43bbd3ff4a7b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tender</value>
-      <webElementGuid>1efe4eec-4480-4739-b47f-4cbfc75fb17b</webElementGuid>
+      <webElementGuid>aafe2e23-a004-494b-88ea-f7da45c5a239</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont bg-gry-light min-h-screen&quot;]/div[1]/div[@class=&quot;bg-white pt-5&quot;]/div[@class=&quot;container mx-auto uppercase flex justify-center py-1&quot;]/a[@class=&quot;ml-4 px-3 py-1 text-sm font-medium text-blk-light focus:outline-none&quot;]</value>
-      <webElementGuid>84905a94-40fa-4751-b3ce-60a82a64af93</webElementGuid>
+      <webElementGuid>2f229346-5c09-426e-b115-9d7630e8e520</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='__layout']/div/div/div[2]/div/a[5]</value>
-      <webElementGuid>32954cd6-25bd-4fc9-bcb6-b3b8bf5769ea</webElementGuid>
+      <webElementGuid>696b9f39-af22-4b59-80e8-a1c30dc7571b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Tender')]</value>
-      <webElementGuid>24cea1f3-72f8-4f3f-bd42-e1c8bebef7c6</webElementGuid>
+      <webElementGuid>9fc1052b-ee2a-4b77-9647-c3be2399a740</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Design &amp; Development'])[1]/following::a[1]</value>
-      <webElementGuid>98da8034-637e-4ec1-a4d6-78dc9e18e10e</webElementGuid>
+      <webElementGuid>815b8417-907d-4b31-b1cf-766a9d7da041</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Request'])[1]/following::a[2]</value>
-      <webElementGuid>255f9b5a-9b2b-4965-ad7e-cc3b71d72454</webElementGuid>
+      <webElementGuid>658e7171-1769-4c98-8d78-55f942ba0185</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Contracts'])[1]/preceding::a[1]</value>
-      <webElementGuid>4981d9df-5790-4cf8-9537-3f068b3aa683</webElementGuid>
+      <webElementGuid>ac062828-acb7-4b36-9ba3-7b5a32ea1009</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Monitoring'])[1]/preceding::a[2]</value>
-      <webElementGuid>2bb314a1-1abf-4273-b602-d0a615c54568</webElementGuid>
+      <webElementGuid>5da67210-fb11-4bf6-8acc-2fe5a716cfd5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tender']/parent::*</value>
-      <webElementGuid>035f0f58-4235-4dd0-aac8-5c242acbfc8e</webElementGuid>
+      <webElementGuid>46159db1-90f4-4bfd-9bbb-c54bff8cd62a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -122,7 +122,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/tender')]</value>
-      <webElementGuid>c2fc5f38-1696-4e63-814b-5a9cd5ed64b3</webElementGuid>
+      <webElementGuid>0c1d9f87-dee4-42f8-acfe-02789709d19c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -130,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a[5]</value>
-      <webElementGuid>0f207f87-9ad0-498e-b324-a34dba66f2c0</webElementGuid>
+      <webElementGuid>afb5c704-b9e8-4eab-8704-6ca1bde8647f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -138,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/tender' and (text() = 'Tender' or . = 'Tender')]</value>
-      <webElementGuid>747847a8-3def-4911-8e63-ba618da7731d</webElementGuid>
+      <webElementGuid>2d0240ce-56ed-4d97-839a-04c733bed694</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
