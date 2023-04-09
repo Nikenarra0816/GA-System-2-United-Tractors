@@ -17,11 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://ut-depan.pages.dev/')
-
-WebUI.setText(findTestObject('Login/field-username'), username)
-
-WebUI.setText(findTestObject('Login/field-password'), password)
-
-WebUI.click(findTestObject('Login/button-login'))
+WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [:], FailureHandling.STOP_ON_FAILURE)
 
