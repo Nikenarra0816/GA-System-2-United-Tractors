@@ -55,7 +55,7 @@ class tender {
 		FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I add new data tender")
+	@When("I add new data empty tender")
 	def AddTender() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
 		WebUI.click(findTestObject('Tender/button-add-vendor'))
@@ -66,4 +66,24 @@ class tender {
 		WebUI.click(findTestObject('Tender/button-save'))
 		WebUI.click(findTestObject('Tender/button-okkosong'))
 	}
+	
+	@When("I add new data tender")
+	def AddNewTender() {
+		WebUI.click(findTestObject('Tender/menu-tender'))
+		WebUI.click(findTestObject('Tender/button-add-vendor'))
+		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'Maspion')
+		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Yaniar')
+		WebUI.setText(findTestObject('Tender/field-email'), 'maspion@getnada.com')
+		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Depol')
+		WebUI.setText(findTestObject('Tender/field-telepon'), '085343998654')
+		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Yaniar')
+		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')	
+	}
+	
+	@Then("I click save data")
+	def Savenewdata() {
+		WebUI.click(findTestObject('Tender/button-save'))
+        WebUI.click(findTestObject('Tender/button-ok tender'))
+	}
+
 }

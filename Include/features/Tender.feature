@@ -22,9 +22,22 @@ Feature: Tender
   @tag1
   Scenario Outline: Add data empty
     Given I login valid username <username> and password <password>
-    When I add new data tender
+    When I add new data empty tender
     Then I click button save
 
     Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  Scenario Outline: Add data new tender
+    Given I login valid username <username> and password <password>
+    When I add new data tender
+    Then I click save data
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+      
+      
+      
