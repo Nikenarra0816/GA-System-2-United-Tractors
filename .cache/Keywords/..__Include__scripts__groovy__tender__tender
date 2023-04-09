@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "6DA869D43E99597FD12090116E07DA47",
+  "keywordFileContentHash": "217B08038C139ED3A20F6BE585310D9F",
   "keywordClasses": [
     {
       "name": "tender.tender",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

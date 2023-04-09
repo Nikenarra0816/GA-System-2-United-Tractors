@@ -44,3 +44,7 @@ WebUI.click(findTestObject('Tender/button-ok tender'))
 
 WebUI.click(findTestObject('Tender/button-okkosong'))
 
+WebUI.click(findTestObject('Tender/button-cancel'))
+
+WebUI.click(findTestObject('Tender/button-ok terdaftar'))
+

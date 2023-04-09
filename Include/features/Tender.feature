@@ -29,6 +29,15 @@ Feature: Tender
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+  Scenario Outline: Cancel add data tender 
+    Given I login valid username <username> and password <password>
+    When I click add data
+    Then I click button cancel
+      
+     Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
   Scenario Outline: Add data new tender
     Given I login valid username <username> and password <password>
     When I add new data tender
@@ -38,6 +47,5 @@ Feature: Tender
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-      
-      
+  
       

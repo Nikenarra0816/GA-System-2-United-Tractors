@@ -67,16 +67,27 @@ class tender {
 		WebUI.click(findTestObject('Tender/button-okkosong'))
 	}
 	
+	@When("I click add data")
+	def Clickdata() {
+		WebUI.click(findTestObject('Tender/menu-tender'))
+		WebUI.click(findTestObject('Tender/button-add-vendor'))
+	}
+	
+	@Then("I click button cancel")
+	def Canceldata() {
+		WebUI.click(findTestObject('Tender/button-cancel'))
+	}
+	
 	@When("I add new data tender")
 	def AddNewTender() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
 		WebUI.click(findTestObject('Tender/button-add-vendor'))
-		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'Maspion')
-		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Yaniar')
-		WebUI.setText(findTestObject('Tender/field-email'), 'maspion@getnada.com')
-		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Depol')
-		WebUI.setText(findTestObject('Tender/field-telepon'), '085343998654')
-		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Yaniar')
+		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'JJ Contractor')
+		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Nando')
+		WebUI.setText(findTestObject('Tender/field-email'), 'nando@getnada.com')
+		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Tasik')
+		WebUI.setText(findTestObject('Tender/field-telepon'), '085222332123')
+		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Nando R')
 		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')	
 	}
 	
@@ -85,5 +96,5 @@ class tender {
 		WebUI.click(findTestObject('Tender/button-save'))
         WebUI.click(findTestObject('Tender/button-ok tender'))
 	}
-
+	
 }
