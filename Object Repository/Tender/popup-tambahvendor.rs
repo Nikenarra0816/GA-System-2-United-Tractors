@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>popup-tambahvendor</name>
+   <tag></tag>
+   <elementGuidId>eaf1262d-a0f1-49e9-9bc0-08225d1819e1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__layout']/div/div[2]/div/div/div[4]/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.vm--modal</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fa3fa73b-c58c-4e74-99a3-73676481c4a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-expanded</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>250d3dee-36d5-4afc-8736-2b6917187a56</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>dialog</value>
+      <webElementGuid>0db00adc-886c-46fe-b60e-8eab30a87b2e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-modal</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>c6856f94-a26d-4fbd-8eb2-18268dce3f9b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>vm--modal</value>
+      <webElementGuid>25d43f24-b3ee-4d20-b5ca-d3ac0284c061</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tambah Vendor Nama Kontraktor  Vendor PIC  Email  Alamat Kantor Vendor  Telepon  Nama Vendor yang TTD Kontrak  Jabatan Vendor yang TTD Kontrak  
+          Cancel
+         
+          Save
+         </value>
+      <webElementGuid>fac59698-c318-4e74-acb4-49394ad44a07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont bg-gry-light min-h-screen&quot;]/div[2]/div[@class=&quot;container mx-auto p-4&quot;]/div[@class=&quot;px-4 h-screen&quot;]/div[4]/div[@class=&quot;vm--container scrollable&quot;]/div[@class=&quot;vm--modal&quot;]</value>
+      <webElementGuid>e3deceff-0f52-44ae-b129-dc7cc35840b1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/div[2]/div/div/div[4]/div/div[2]</value>
+      <webElementGuid>6646b1e7-1cbb-4773-aad4-fb8f93bf4b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Perpage'])[1]/following::div[8]</value>
+      <webElementGuid>db3b34b6-5e2c-44e4-803e-2ac114df31b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nudge'])[5]/following::div[10]</value>
+      <webElementGuid>ad6e8d2a-07b2-4dff-aa51-2e3ed9e49222</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div[2]</value>
+      <webElementGuid>df483896-7dd8-4b42-828f-caf58a2da52e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Tambah Vendor Nama Kontraktor  Vendor PIC  Email  Alamat Kantor Vendor  Telepon  Nama Vendor yang TTD Kontrak  Jabatan Vendor yang TTD Kontrak  
+          Cancel
+         
+          Save
+         ' or . = 'Tambah Vendor Nama Kontraktor  Vendor PIC  Email  Alamat Kantor Vendor  Telepon  Nama Vendor yang TTD Kontrak  Jabatan Vendor yang TTD Kontrak  
+          Cancel
+         
+          Save
+         ')]</value>
+      <webElementGuid>0401a6ba-d5c8-4eac-a5a0-14597ad4a31c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

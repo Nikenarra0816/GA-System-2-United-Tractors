@@ -1,4 +1,4 @@
-package signout
+package tender
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,24 +44,26 @@ import cucumber.api.java.en.When
 
 
 
-class Signout {
+class tender {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
 
-	@Given("I login with valid username (.*) and password (.*)")
+	@Given("I login valid username (.*) and password (.*)")
 	def login(String username, String password) {
 		WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [('username') : username, ('password') : password],
 		FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I click profile")
-	def clickprofile() {
-		WebUI.click(findTestObject('Signout/profile'))
+	@When("I add new data tender")
+	def AddTender() {
+		WebUI.click(findTestObject('Tender/menu-tender'))
+		WebUI.click(findTestObject('Tender/button-add-vendor'))
 	}
 
-	@Then("I click button sign out")
-	def clicksignout() {
-		WebUI.click(findTestObject('Signout/signout'))
+	@Then("I click button save")
+	def Save() {
+		WebUI.click(findTestObject('Tender/button-save'))
+		WebUI.click(findTestObject('Tender/button-okkosong'))
 	}
 }

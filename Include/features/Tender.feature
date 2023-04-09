@@ -17,19 +17,14 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Signout
+Feature: Tender
 
-  @test
-  Scenario Outline: Signout account
-    Given I login with valid username <username> and password <password>
-    When I click profile
-    Then I click button sign out
+  @tag1
+  Scenario Outline: Add data empty
+    Given I login valid username <username> and password <password>
+    When I add new data tender
+    Then I click button save
 
     Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
-      
-      
-      
-      
-      
