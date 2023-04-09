@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>profile</name>
+   <tag></tag>
+   <elementGuidId>49899305-c253-4d1b-972c-617869684eae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.fas.fa-xs.fa-chevron-down.ml-2.cursor-pointer</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__layout']/div/div/div/div/div/div[2]/div/div[2]/div/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>33eeb303-9ace-4b24-a7d9-76592d2f773d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fas fa-xs fa-chevron-down ml-2 cursor-pointer</value>
+      <webElementGuid>7395c327-8db5-4edb-b214-ab463b7f3314</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont bg-gry-light min-h-screen&quot;]/div[1]/div[@class=&quot;bg-white&quot;]/div[@class=&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8&quot;]/div[@class=&quot;flex items-center justify-between h-16&quot;]/div[@class=&quot;hidden md:block&quot;]/div[@class=&quot;ml-4 flex items-center md:ml-6&quot;]/div[@class=&quot;ml-3 relative&quot;]/div[@class=&quot;flex flex-wrap items-center&quot;]/i[@class=&quot;fas fa-xs fa-chevron-down ml-2 cursor-pointer&quot;]</value>
+      <webElementGuid>c656a7d5-dff1-47d1-82f7-22c2c0d82685</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__layout']/div/div/div/div/div/div[2]/div/div[2]/div/i</value>
+      <webElementGuid>faee9fc2-4d55-45f0-a9a1-9859e3ab358a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//i</value>
+      <webElementGuid>2c268c71-da84-4b9c-a41e-4ce7383dd9c2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

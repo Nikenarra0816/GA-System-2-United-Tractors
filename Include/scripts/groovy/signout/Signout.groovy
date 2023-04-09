@@ -1,4 +1,4 @@
-package login
+package signout
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,40 +44,24 @@ import cucumber.api.java.en.When
 
 
 
-class Login {
+class Signout {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I open https://ut-depan.pages.dev/")
-	def OpenGASys2() {
-		WebUI.openBrowser('https://ut-depan.pages.dev/')
+	
+	@Given("I login with valid username (.*) and password (.*)")
+	def login(String username, String password) {
+		WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [('username') : username, ('password') : password], 
+    FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I fill in correct username (.*) and incorret password (.*)")
-	def enterIncorrectPassword(String username, String password) {
-		WebUI.setText(findTestObject('Login/field-username'), username)
-		WebUI.setEncryptedText(findTestObject('Login/field-password'), password)
+	@When("I click profile")
+	def clickprofile() {
+		WebUI.click(findTestObject('Signout/profile'))
 	}
 
-	@When("I click Log In")
-	def clickLogin() {
-		WebUI.click(findTestObject('Login/button-login'))
-	}
-
-	@Then("I see error message Username atau password salah")
-	def incorrectPasswordMessage() {
-		WebUI.click(findTestObject('Login/popup-userpass-salah'))
-		WebUI.click(findTestObject('Login/button-okesalah'))
-	}
-
-	@When("I fill in correct username (.*) and password (.*)")
-	def enterIncorrectUsername(String username, String password) {
-		WebUI.setText(findTestObject('Login/field-username'), username)
-		WebUI.setEncryptedText(findTestObject('Login/field-password'), password)
-	}
-
-	@Then("I see my home page")
-	def seeHomePage() {
-		WebUI.check(findTestObject('Login/home-page'))
+	@Then("I click button sign out")
+	def clicksignout() {
+		WebUI.click(findTestObject('Signout/signout'))
 	}
 }

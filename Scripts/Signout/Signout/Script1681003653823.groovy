@@ -17,5 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [('username') : 'gdsechead', ('password') : '123qwe*'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Signout/profile'))
+
+WebUI.click(findTestObject('Signout/signout'))
 
