@@ -47,5 +47,13 @@ Feature: Tender
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-  
-      
+  Scenario Outline: Add data tender with registered data
+  	Given I login valid username <username> and password <password>
+    When I add data tender with registered data 
+    Then I click save data registered
+    
+    Examples:
+    | username | password|
+    | gdsechead | 123qwe*|
+    
+     

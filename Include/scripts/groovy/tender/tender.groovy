@@ -82,12 +82,12 @@ class tender {
 	def AddNewTender() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
 		WebUI.click(findTestObject('Tender/button-add-vendor'))
-		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'JJ Contractor')
-		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Nando')
-		WebUI.setText(findTestObject('Tender/field-email'), 'nando@getnada.com')
-		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Tasik')
-		WebUI.setText(findTestObject('Tender/field-telepon'), '085222332123')
-		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Nando R')
+		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'Yuhu Contractor')
+		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Yuhu')
+		WebUI.setText(findTestObject('Tender/field-email'), 'yuhu@getnada.com')
+		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Palembang')
+		WebUI.setText(findTestObject('Tender/field-telepon'), '085243245342')
+		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Yuhu')
 		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')	
 	}
 	
@@ -96,5 +96,25 @@ class tender {
 		WebUI.click(findTestObject('Tender/button-save'))
         WebUI.click(findTestObject('Tender/button-ok tender'))
 	}
+	
+	@When("I add data tender with registered data")
+	def AddRegisteredData() {
+		WebUI.click(findTestObject('Tender/menu-tender'))
+		WebUI.click(findTestObject('Tender/button-add-vendor'))
+		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'JJ Contractor')
+		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Nando')
+		WebUI.setText(findTestObject('Tender/field-email'), 'nando@getnada.com')
+		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Tasik')
+		WebUI.setText(findTestObject('Tender/field-telepon'), '085222332123')
+		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Nando R')
+		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')
+	}
+	
+	@Then("I click save data registered")
+	def Savedataregistered() {
+		WebUI.click(findTestObject('Tender/button-save'))
+		WebUI.click(findTestObject('Tender/button-ok terdaftar'))
+	}
+	
 	
 }
