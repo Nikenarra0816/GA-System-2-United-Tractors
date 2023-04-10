@@ -48,3 +48,13 @@ WebUI.click(findTestObject('Tender/button-cancel'))
 
 WebUI.click(findTestObject('Tender/button-ok terdaftar'))
 
+WebUI.click(findTestObject('Tender/button-option'))
+
+WebUI.click(findTestObject('Tender/option-detail'))
+
+WebUI.click(findTestObject('Tender/detail-project'))
+
+WebUI.click(findTestObject('Tender/button-downloadcontract'))
+
+WebUI.click(findTestObject('Tender/button-canceldetail'))
+

@@ -56,4 +56,14 @@ Feature: Tender
     | username | password|
     | gdsechead | 123qwe*|
     
+	Scenario Outline: See detailed data tender
+		Given I login valid username <username> and password <password>
+		When I click detailed data tender
+		Then I back to menu tender 
+		
+		Examples:
+    | username | password|
+    | gdsechead | 123qwe*|
+    
+    
      
