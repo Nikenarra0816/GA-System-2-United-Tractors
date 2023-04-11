@@ -38,3 +38,13 @@ Feature: Division
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	Scenario Outline: Add data new division
+    Given I login division username <username> and password <password>
+    When I add new data division
+    Then I click button save division
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+
+      

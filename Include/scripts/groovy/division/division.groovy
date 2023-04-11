@@ -79,5 +79,20 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-cancel'))
 	}
 	
+	@When("I add new data division")
+	def ClickNewData() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
+		WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Inspector Nganjuk')
+	}
+
+	@Then("I click button save division")
+	def Savedivision() {
+		WebUI.click(findTestObject('Manage Data/Division/button-save'))
+		WebUI.click(findTestObject('Manage Data/Division/button-okberhasil'))
+	}
+	
+	
 	
 }
