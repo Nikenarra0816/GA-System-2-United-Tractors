@@ -46,5 +46,15 @@ Feature: Division
     Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+   Scenario Outline: Add data registered division
+    Given I login division username <username> and password <password>
+    When I add data registered division
+    Then I click button save registered division
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+	
 
       
