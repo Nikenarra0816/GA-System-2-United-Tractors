@@ -55,7 +55,7 @@ class division {
 	}
 
 	@When("I add new data empty division")
-	def AddTender() {
+	def AddDivision() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
 		WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
@@ -66,7 +66,7 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-okwajibisi'))
 	}
-	
+
 	@When("I click add data division")
 	def ClickAdd() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,7 +78,7 @@ class division {
 	def Cancel() {
 		WebUI.click(findTestObject('Manage Data/Division/button-cancel'))
 	}
-	
+
 	@When("I add new data division")
 	def ClickNewData() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -92,7 +92,7 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-okberhasil'))
 	}
-	
+
 	@When("I add data registered division")
 	def ClickDataRegistered() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +106,7 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-okterdaftar'))
 	}
-	
+
 	@When("I click button edit and edit data")
 	def ClickEdit() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,8 +121,4 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-berhasiledit'))
 	}
-	
-	
-	
-	
 }
