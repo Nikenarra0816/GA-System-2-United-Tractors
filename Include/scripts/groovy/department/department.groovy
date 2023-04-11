@@ -78,4 +78,19 @@ class department {
 	def CancelDepart() {
 		WebUI.click(findTestObject('Manage Data/Department/button-canceldepartment'))
 	}
+	
+	@When("I add new data departement")
+	def AddNewDepart() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
+		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Sales')
+	}
+
+	@Then("I click button save departement")
+	def SaveDepart() {
+		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
+		WebUI.click(findTestObject('Manage Data/Department/button-okeberhasil'))
+	}
+	
 }
