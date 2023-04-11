@@ -84,13 +84,27 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
 		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
-		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Sales')
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Academy')
 	}
 
 	@Then("I click button save departement")
 	def SaveDepart() {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-okeberhasil'))
+	}
+	
+	@When("I add data registered departement")
+	def AddDataRegisDepart() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
+		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Sales')
+	}
+
+	@Then("I click button save registered departement")
+	def Saveregistered() {
+		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
+		WebUI.click(findTestObject('Manage Data/Department/button-oketerdaftar'))
 	}
 	
 }
