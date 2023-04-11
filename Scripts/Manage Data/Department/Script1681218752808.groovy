@@ -42,5 +42,7 @@ WebUI.click(findTestObject('Manage Data/Department/button-editdepartment'))
 
 WebUI.click(findTestObject('Manage Data/Department/button-editpopupdepart'))
 
+WebUI.clearText(findTestObject('Manage Data/Department/field-department'))
+
 WebUI.click(findTestObject('Manage Data/Department/button-ok_success_edit'))
 

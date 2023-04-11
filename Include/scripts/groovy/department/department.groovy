@@ -84,7 +84,7 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
 		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
-		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Academy')
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Academy Marketing')
 	}
 
 	@Then("I click button save departement")
@@ -105,6 +105,21 @@ class department {
 	def Saveregistered() {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-oketerdaftar'))
+	}
+	
+	@When("I click button edit and edit data department")
+	def ClickEdit() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
+		WebUI.click(findTestObject('Manage Data/Department/button-editdepartment'))
+		WebUI.clearText(findTestObject('Manage Data/Department/field-department'))
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'GA Sys 2')
+	}
+
+	@Then("I click button save edit department")
+	def Saveedit() {
+		WebUI.click(findTestObject('Manage Data/Department/button-editpopupdepart'))
+		WebUI.click(findTestObject('Manage Data/Department/button-ok_success_edit'))
 	}
 	
 }

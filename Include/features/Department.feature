@@ -47,7 +47,7 @@ Feature: Department
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-  Scenario Outline: Add data registered departement
+  Scenario Outline: Add data registered department
     Given I login department username <username> and password <password>
     When I add data registered departement
     Then I click button save registered departement
@@ -56,6 +56,14 @@ Feature: Department
       | username  | password | 
       | gdsechead | 123qwe* | 
  
+ Scenario Outline: Edit data department
+    Given I login department username <username> and password <password>
+    When I click button edit and edit data department
+    Then I click button save edit department
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
  
   
       
