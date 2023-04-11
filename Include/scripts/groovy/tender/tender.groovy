@@ -66,18 +66,18 @@ class tender {
 		WebUI.click(findTestObject('Tender/button-save'))
 		WebUI.click(findTestObject('Tender/button-okkosong'))
 	}
-	
+
 	@When("I click add data")
 	def Clickdata() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
 		WebUI.click(findTestObject('Tender/button-add-vendor'))
 	}
-	
+
 	@Then("I click button cancel")
 	def Canceldata() {
 		WebUI.click(findTestObject('Tender/button-cancel'))
 	}
-	
+
 	@When("I add new data tender")
 	def AddNewTender() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
@@ -88,15 +88,15 @@ class tender {
 		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Palembang')
 		WebUI.setText(findTestObject('Tender/field-telepon'), '085434554567')
 		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'O')
-		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')	
+		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')
 	}
-	
+
 	@Then("I click save data")
 	def Savenewdata() {
 		WebUI.click(findTestObject('Tender/button-save'))
-        WebUI.click(findTestObject('Tender/button-ok tender'))
+		WebUI.click(findTestObject('Tender/button-ok tender'))
 	}
-	
+
 	@When("I add data tender with registered data")
 	def AddRegisteredData() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
@@ -109,13 +109,13 @@ class tender {
 		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'Nando R')
 		WebUI.setText(findTestObject('Tender/field-jabatanvendorttd'), 'CEO')
 	}
-	
+
 	@Then("I click save data registered")
 	def Savedataregistered() {
 		WebUI.click(findTestObject('Tender/button-save'))
 		WebUI.click(findTestObject('Tender/button-ok terdaftar'))
 	}
-	
+
 	@When("I click detailed data tender")
 	def Clickdetail() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
@@ -124,10 +124,9 @@ class tender {
 		WebUI.click(findTestObject('Tender/detail-project'))
 		WebUI.click(findTestObject('Tender/button-downloadcontract'))
 	}
-	
+
 	@Then("I back to menu tender")
 	def BackTender() {
 		WebUI.click(findTestObject('Tender/button-canceldetail'))
 	}
-	
 }
