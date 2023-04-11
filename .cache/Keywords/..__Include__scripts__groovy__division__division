@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "433755A074612E22DE4A8EEEF78C8AA8",
+  "keywordFileContentHash": "4FE40C7F2E57D9680608AF61707AC65E",
   "keywordClasses": [
     {
       "name": "division.division",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

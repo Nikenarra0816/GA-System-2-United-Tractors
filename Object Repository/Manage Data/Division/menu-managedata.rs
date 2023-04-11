@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>//div[@id='__layout']/div/div/div[2]/div/a[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont bg-gry-light min-h-screen&quot;]/div[1]/div[@class=&quot;bg-white pt-5&quot;]/div[@class=&quot;container mx-auto uppercase flex justify-center py-1&quot;]/a[@class=&quot;ml-4 px-3 py-1 text-sm font-medium text-blk-light focus:outline-none&quot;][count(. | //*[@href = '/manage-data' and (text() = 'Manage Data' or . = 'Manage Data')]) = count(//*[@href = '/manage-data' and (text() = 'Manage Data' or . = 'Manage Data')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>45f5769c-9b14-458f-9aec-6fed1ea03e9a</webElementGuid>
+      <webElementGuid>b0734302-fae3-4609-a623-357b6ed6699a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/manage-data</value>
-      <webElementGuid>eb8cbfa7-f68a-4654-b089-99c0d5d917cf</webElementGuid>
+      <webElementGuid>d6a61a2a-3781-4537-85fa-4db4695a26fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ml-4 px-3 py-1 text-sm font-medium text-blk-light focus:outline-none</value>
-      <webElementGuid>6347c693-d0f1-4706-9173-ddf014ebb710</webElementGuid>
+      <webElementGuid>4e7c7e3b-c94f-44ad-b8f5-4855507922c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Manage Data</value>
-      <webElementGuid>7618b4e4-416a-4166-8cd6-d9d1eb215a90</webElementGuid>
+      <webElementGuid>0b90b037-4d86-4b21-9e0d-47a96b497668</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;__layout&quot;)/div[@class=&quot;font-mont bg-gry-light min-h-screen&quot;]/div[1]/div[@class=&quot;bg-white pt-5&quot;]/div[@class=&quot;container mx-auto uppercase flex justify-center py-1&quot;]/a[@class=&quot;ml-4 px-3 py-1 text-sm font-medium text-blk-light focus:outline-none&quot;]</value>
-      <webElementGuid>e5cce542-b5e0-4aed-9f9c-397d887f7a18</webElementGuid>
+      <webElementGuid>f53d69a8-c81f-4c8c-ac81-5087ef4f9bf1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='__layout']/div/div/div[2]/div/a[2]</value>
-      <webElementGuid>acc8cb11-a58e-4f53-9337-588f9daee54d</webElementGuid>
+      <webElementGuid>37b16067-e251-4329-ab46-887fc6d81e36</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Manage Data')]</value>
-      <webElementGuid>7700978c-a243-4c9a-97e8-9b59206922fc</webElementGuid>
+      <webElementGuid>27508fe0-9350-427e-b38b-261526d66763</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/following::a[1]</value>
-      <webElementGuid>d4aa3e4a-2dfb-473d-86d8-d09577261697</webElementGuid>
+      <webElementGuid>ae063dd9-cd7f-487a-b9d3-e843e60bbc11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sign out'])[2]/following::a[2]</value>
-      <webElementGuid>11acd9e1-574d-4eed-921d-0939119510c6</webElementGuid>
+      <webElementGuid>8873d2d7-6cc2-4cae-8b43-5250a298c8d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Project Request'])[1]/preceding::a[1]</value>
-      <webElementGuid>c187806f-b258-4b9a-9dc8-24bb5a482870</webElementGuid>
+      <webElementGuid>79dae8d5-267b-4175-b0b1-ed2610b2070a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Design &amp; Development'])[1]/preceding::a[2]</value>
-      <webElementGuid>36e24656-722e-413d-bc54-511dde7b937d</webElementGuid>
+      <webElementGuid>b1bc8fa4-4e90-4789-a238-b80920cd8eda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Manage Data']/parent::*</value>
-      <webElementGuid>b152877a-3047-4cb8-90f7-bb4a4a7f6410</webElementGuid>
+      <webElementGuid>90a99c35-d035-4d38-a43b-a9370ade0349</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/manage-data')]</value>
-      <webElementGuid>89837bcf-d1e4-459a-8d47-758b0beba35b</webElementGuid>
+      <webElementGuid>210bf4ee-6f6b-4df5-98d6-1cefbbf273bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/a[2]</value>
-      <webElementGuid>272990c5-d497-4739-b6cd-6a986da657eb</webElementGuid>
+      <webElementGuid>f10aa8cb-6e01-42e5-b118-9c7489e9d0cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,6 +138,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = '/manage-data' and (text() = 'Manage Data' or . = 'Manage Data')]</value>
-      <webElementGuid>3100f717-cffc-4667-be8c-095054c6980d</webElementGuid>
+      <webElementGuid>006450f6-d53d-45b2-af21-faac52d673ec</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

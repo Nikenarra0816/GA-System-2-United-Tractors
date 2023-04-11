@@ -84,7 +84,7 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
 		WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
-		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Inspector Kediri')
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Inspector Tasik')
 	}
 
 	@Then("I click button save division")
@@ -106,6 +106,23 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-okterdaftar'))
 	}
+	
+	@When("I click button edit and edit data")
+	def ClickEdit() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
+		WebUI.click(findTestObject('Manage Data/Division/button-edit'))
+		WebUI.clearText(findTestObject('Manage Data/Division/field-division'))
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Product Manager')
+	}
+
+	@Then("I click button save edit")
+	def Saveedit() {
+		WebUI.click(findTestObject('Manage Data/Division/button-save'))
+		WebUI.click(findTestObject('Manage Data/Division/button-berhasiledit'))
+	}
+	
+	
 	
 	
 }

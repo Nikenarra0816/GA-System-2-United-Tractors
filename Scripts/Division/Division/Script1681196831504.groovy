@@ -38,3 +38,11 @@ WebUI.click(findTestObject('Manage Data/Division/button-okterdaftar'))
 
 WebUI.click(findTestObject('Manage Data/Division/button-cancel'))
 
+WebUI.click(findTestObject('Manage Data/Division/button-edit'))
+
+WebUI.clearText(findTestObject('Manage Data/Division/field-division'))
+
+WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Product Owner')
+
+WebUI.click(findTestObject('Manage Data/Division/button-berhasiledit'))
+

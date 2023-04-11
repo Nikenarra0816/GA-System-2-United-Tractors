@@ -56,5 +56,13 @@ Feature: Division
       | username  | password | 
       | gdsechead | 123qwe* | 
 	
+	Scenario Outline: Edit data division
+    Given I login division username <username> and password <password>
+    When I click button edit and edit data
+    Then I click button save edit
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
 
       
