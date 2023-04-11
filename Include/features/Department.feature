@@ -25,6 +25,17 @@ Feature: Department
     When I add new data empty department
     Then I click button save empty departement
 
- Examples: 
+  Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  Scenario Outline: Cancel add data departement
+    Given I login department username <username> and password <password>
+    When I click add data departement
+    Then I click button cancel departement
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+  
+      

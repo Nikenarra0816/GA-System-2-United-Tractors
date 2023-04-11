@@ -66,4 +66,16 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-okewajibisi'))
 	}
+	
+	@When("I click add data departement")
+	def AddDepart() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
+		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
+	}
+
+	@Then("I click button cancel departement")
+	def CancelDepart() {
+		WebUI.click(findTestObject('Manage Data/Department/button-canceldepartment'))
+	}
 }
