@@ -29,5 +29,12 @@ Feature: Division
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-      
+  Scenario Outline: Cancel Add data division
+    Given I login division username <username> and password <password>
+    When I click add data division
+    Then I click button cancel division
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
       

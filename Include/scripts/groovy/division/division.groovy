@@ -66,4 +66,18 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/button-save'))
 		WebUI.click(findTestObject('Manage Data/Division/button-okwajibisi'))
 	}
+	
+	@When("I click add data division")
+	def ClickAdd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
+		WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
+	}
+
+	@Then("I click button cancel division")
+	def Cancel() {
+		WebUI.click(findTestObject('Manage Data/Division/button-cancel'))
+	}
+	
+	
 }
