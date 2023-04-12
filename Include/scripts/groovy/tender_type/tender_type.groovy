@@ -79,6 +79,22 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-cancel_tendertype'))
 	}
 	
+	@When("I add new data tender type")
+	def Addtendertype() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Lelang')
+	}
+
+	@Then("I click button save tender type")
+	def SaveTendertype() {
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
+	}
+	
+	
+	
 	
 	
 	
