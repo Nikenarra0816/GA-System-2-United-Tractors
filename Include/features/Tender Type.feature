@@ -29,5 +29,14 @@ Feature: Tender Type
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+ Scenario Outline: Cancel Add data tender type
+    Given I login tender type username <username> and password <password>
+    When I click add data tender type
+    Then I click button cancel tender type
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
     
     
