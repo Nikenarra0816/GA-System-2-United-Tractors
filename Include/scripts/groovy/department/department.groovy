@@ -66,7 +66,7 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-okewajibisi'))
 	}
-	
+
 	@When("I click add data departement")
 	def AddDepart() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,7 +78,7 @@ class department {
 	def CancelDepart() {
 		WebUI.click(findTestObject('Manage Data/Department/button-canceldepartment'))
 	}
-	
+
 	@When("I add new data departement")
 	def AddNewDepart() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -92,7 +92,7 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-okeberhasil'))
 	}
-	
+
 	@When("I add data registered departement")
 	def AddDataRegisDepart() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +106,7 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 		WebUI.click(findTestObject('Manage Data/Department/button-oketerdaftar'))
 	}
-	
+
 	@When("I click button edit and edit data department")
 	def ClickEdit() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,5 +121,4 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Department/button-editpopupdepart'))
 		WebUI.click(findTestObject('Manage Data/Department/button-ok_success_edit'))
 	}
-	
 }
