@@ -39,9 +39,18 @@ Feature: Tender Type
     | gdsechead | 123qwe* | 
     
   Scenario Outline: Add data new tender type
-    Given I login division username <username> and password <password>
+    Given I login tender type username <username> and password <password>
     When I add new data tender type
     Then I click button save tender type
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+	Scenario Outline: Add data registered tender type
+    Given I login tender type username <username> and password <password>
+    When I add data registered tender type
+    Then I click button save registered tender type
 
     Examples: 
       | username  | password | 

@@ -84,7 +84,7 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
-		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Lelang')
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Tender Type Sby')
 	}
 
 	@Then("I click button save tender type")
@@ -93,6 +93,19 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
 	}
 	
+	@When("I add data registered tender type")
+	def ClickAddregisteredTendertype() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Lelang')
+	}
+
+	@Then("I click button save registered tender type")
+	def SaveRegisteredTendertype() {
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_data_registered'))
+	}
 	
 	
 	
