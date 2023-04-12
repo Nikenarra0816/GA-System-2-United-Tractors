@@ -84,7 +84,7 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
-		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Tender Type Sby')
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Tender Type Mlg')
 	}
 
 	@Then("I click button save tender type")
@@ -105,6 +105,21 @@ class tender_type {
 	def SaveRegisteredTendertype() {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_data_registered'))
+	}
+	
+	@When("I click button edit and edit data tender type")
+	def ClickEdit() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-edit_tendertype'))
+		WebUI.clearText(findTestObject('Manage Data/Tender Type/field-tendertype'))
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Edit tender')
+	}
+
+	@Then("I click button save edit tender type")
+	def Saveedit() {
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-clickedit'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_edit'))
 	}
 	
 	

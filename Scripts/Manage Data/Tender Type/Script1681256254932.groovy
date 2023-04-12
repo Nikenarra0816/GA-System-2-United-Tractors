@@ -42,3 +42,5 @@ WebUI.click(findTestObject('Manage Data/Tender Type/button-clickedit'))
 
 WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_edit'))
 
+WebUI.clearText(findTestObject('Manage Data/Tender Type/field-tendertype'))
+

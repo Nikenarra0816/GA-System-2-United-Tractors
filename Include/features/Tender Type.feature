@@ -56,4 +56,12 @@ Feature: Tender Type
       | username  | password | 
       | gdsechead | 123qwe* | 
     
+  Scenario Outline: Edit data tender type
+    Given I login tender type username <username> and password <password>
+    When I click button edit and edit data tender type
+    Then I click button save edit tender type
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
     
