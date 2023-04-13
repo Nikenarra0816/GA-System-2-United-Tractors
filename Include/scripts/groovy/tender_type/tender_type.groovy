@@ -66,7 +66,7 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_data_empty'))
 	}
-	
+
 	@When("I click add data tender type")
 	def ClickAddtendertype() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,7 +78,7 @@ class tender_type {
 	def CancelTendertype() {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-cancel_tendertype'))
 	}
-	
+
 	@When("I add new data tender type")
 	def Addtendertype() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -92,7 +92,7 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
 	}
-	
+
 	@When("I add data registered tender type")
 	def ClickAddregisteredTendertype() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +106,7 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_data_registered'))
 	}
-	
+
 	@When("I click button edit and edit data tender type")
 	def ClickEdit() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,9 +121,4 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-clickedit'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_edit'))
 	}
-	
-	
-	
-	
-	
 }
