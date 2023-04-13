@@ -46,3 +46,14 @@ Feature: Type of DnD Document
     Examples: 
     | username  | password | 
     | gdsechead | 123qwe* | 
+    
+  Scenario Outline: Add data registered type of DnD Document
+    Given I login type of DnD Document username <username> and password <password>
+    When I add data registered type of DnD Document
+    Then I click button save registered type of DnD Document
+    
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+    

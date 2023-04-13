@@ -66,7 +66,7 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-ok_empty'))
 	}
-	
+
 	@When("I click add data type of DnD Document")
 	def ClickAddtypeDnD() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,13 +78,13 @@ class type_of_dnd_document {
 	def CancelTypeDnD() {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-cancel_typeofdnd'))
 	}
-	
+
 	@When("I add new data type of DnD Document")
 	def Addtendertypeofdnd() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
-		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Low')
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document X')
 	}
 
 	@Then("I click button save type of DnD Document")
@@ -92,6 +92,18 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-ok_berhasil'))
 	}
-	
-	
+
+	@When("I add data registered type of DnD Document")
+	def ClickAddtendertypeofdnd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Low')
+	}
+
+	@Then("I click button save registered type of DnD Document")
+	def SaveRegiteredDnD() {
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-registered'))
+	}
 }
