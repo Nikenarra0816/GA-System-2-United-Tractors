@@ -38,3 +38,11 @@ Feature: Type of DnD Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	Scenario Outline: Add data new type of DnD Document
+    Given I login type of DnD Document username <username> and password <password>
+    When I add new data type of DnD Document
+    Then I click button save type of DnD Document
+    
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 

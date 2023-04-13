@@ -68,15 +68,29 @@ class type_of_dnd_document {
 	}
 	
 	@When("I click add data type of DnD Document")
-	def ClickAddtendertype() {
+	def ClickAddtypeDnD() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
 	}
 
 	@Then("I click button cancel type of DnD Document")
-	def CancelTendertype() {
+	def CancelTypeDnD() {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-cancel_typeofdnd'))
+	}
+	
+	@When("I add new data type of DnD Document")
+	def Addtendertypeofdnd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Low')
+	}
+
+	@Then("I click button save type of DnD Document")
+	def SaveDnD() {
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-ok_berhasil'))
 	}
 	
 	

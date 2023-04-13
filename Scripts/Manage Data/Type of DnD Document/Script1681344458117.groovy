@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd
 
 WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
 
-WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), '')
+WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Urgent')
 
 WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
 
