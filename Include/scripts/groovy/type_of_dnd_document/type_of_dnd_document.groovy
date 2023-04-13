@@ -84,7 +84,7 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
-		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document X')
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Z')
 	}
 
 	@Then("I click button save type of DnD Document")
@@ -106,4 +106,21 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-registered'))
 	}
+	
+	@When("I click button edit type of DnD Document")
+	def ClickEdittendertypeofdnd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-edit'))
+		WebUI.clearText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'))
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Niken')
+	}
+
+	@Then("I click button save edit type of DnD Document")
+	def SaveEditDnD() {
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-confirmedit'))
+		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-suksesedit'))
+	}
+	
+	
 }

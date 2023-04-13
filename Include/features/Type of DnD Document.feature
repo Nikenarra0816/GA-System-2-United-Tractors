@@ -56,4 +56,12 @@ Feature: Type of DnD Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	Scenario Outline: Edit data type of DnD Document
+    Given I login type of DnD Document username <username> and password <password>
+    When I click button edit type of DnD Document
+    Then I click button save edit type of DnD Document
+    
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
     
