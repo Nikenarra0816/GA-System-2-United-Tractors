@@ -29,3 +29,12 @@ Feature: Type of DnD Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+ 	Scenario Outline: Cancel add data type of DnD Document
+    Given I login type of DnD Document username <username> and password <password>
+    When I click add data type of DnD Document
+    Then I click button cancel type of DnD Document
+    
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
