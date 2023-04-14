@@ -79,4 +79,18 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-cancel'))
 	}
 	
+	@When("I add new data type of Tender Document")
+	def AddnewDataTypeoftender() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_tender_document'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
+		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc Unit')
+	}
+	
+	@Then("I click button save type of Tender Document")
+	def SaveTypeTender() {
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-success_create'))
+	}
+	
 }
