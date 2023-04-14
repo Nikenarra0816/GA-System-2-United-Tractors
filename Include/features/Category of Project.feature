@@ -39,5 +39,15 @@ Feature: Category Of Project
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+  @test
+  Scenario Outline: Add data new category of project
+    Given I login category username <username> and password <password>
+    When I add new data category of project
+    Then I click button save category of project
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
     
     

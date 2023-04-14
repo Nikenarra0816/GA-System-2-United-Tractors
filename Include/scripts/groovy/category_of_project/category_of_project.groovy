@@ -79,4 +79,20 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-cancel_category'))
 	}
 	
+	@When("I add new data category of project")
+	def AddNewDataCategory() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Sales')
+	}
+
+	@Then("I click button save category of project")
+	def SaveCategory() {
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
+	}
+	
+	
+	
 }
