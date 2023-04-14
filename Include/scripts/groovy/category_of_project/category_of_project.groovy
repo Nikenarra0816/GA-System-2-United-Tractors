@@ -55,7 +55,7 @@ class category_of_project {
 	}
 
 	@When("I add new data empty category of project")
-	def AddEmptyDataTypeoftender() {
+	def AddEmptyDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
@@ -65,6 +65,18 @@ class category_of_project {
 	def SaveEmptyData() {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-ok_empty'))
+	}
+	
+	@When("I click add data category of project")
+	def AddDataCategory() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
+	}
+
+	@Then("I click button cancel category of project")
+	def CancelCategory() {
+		WebUI.click(findTestObject('Manage Data/Category of Project/button-cancel_category'))
 	}
 	
 }

@@ -29,4 +29,15 @@ Feature: Category Of Project
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	@test
+  Scenario Outline: Cancel add data category of project
+    Given I login category username <username> and password <password>
+    When I click add data category of project
+    Then I click button cancel category of project
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+    
     
