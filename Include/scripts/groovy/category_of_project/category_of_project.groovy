@@ -84,7 +84,7 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
-		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Sales')
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Academy')
 	}
 
 	@Then("I click button save category of project")
@@ -92,6 +92,21 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
 	}
+	
+	@When("I add data registered category of project")
+	def AddRegisteredDataCategory() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Sales')
+	}
+
+	@Then("I click button save registered category of project")
+	def SaveRegisteredCategory() {
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/button-category_register'))
+	}
+	
 	
 	
 	
