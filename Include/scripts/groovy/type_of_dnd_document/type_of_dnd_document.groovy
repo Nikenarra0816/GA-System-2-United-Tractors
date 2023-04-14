@@ -106,7 +106,7 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-save_typeofdnd'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-registered'))
 	}
-	
+
 	@When("I click button edit type of DnD Document")
 	def ClickEdittendertypeofdnd() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,6 +121,4 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-confirmedit'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-suksesedit'))
 	}
-	
-	
 }
