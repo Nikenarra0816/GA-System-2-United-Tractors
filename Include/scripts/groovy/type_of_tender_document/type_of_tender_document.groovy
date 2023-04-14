@@ -92,7 +92,7 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-success_create'))
 	}
-	
+
 	@When("I add data registered type of Tender Document")
 	def ClickAddTypeoftender() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +106,7 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-registerdata'))
 	}
-	
+
 	@When("I click button edit type of Tender Document")
 	def ClickEditTypeoftender() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,6 +121,4 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-edit'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-succeseditdata'))
 	}
-	
-	
 }
