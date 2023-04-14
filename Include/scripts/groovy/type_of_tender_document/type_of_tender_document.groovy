@@ -66,31 +66,46 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-empty_type_of_tender_doc'))
 	}
-	
+
 	@When("I click add data type of Tender Document")
 	def AddDataTypeoftender() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_tender_document'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
 	}
-	
+
 	@Then("I click button cancel type of Tender Document")
 	def CancelTypeTender() {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-cancel'))
 	}
-	
+
 	@When("I add new data type of Tender Document")
 	def AddnewDataTypeoftender() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_tender_document'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
-		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc Unit')
+		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc United')
 	}
-	
+
 	@Then("I click button save type of Tender Document")
 	def SaveTypeTender() {
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-success_create'))
 	}
+	
+	@When("I add data registered type of Tender Document")
+	def ClickAddTypeoftender() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_tender_document'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
+		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc Unit')
+	}
+
+	@Then("I click button save registered type of Tender Document")
+	def SaveRegisteredTypeTender() {
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
+		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-registerdata'))
+	}
+	
 	
 }

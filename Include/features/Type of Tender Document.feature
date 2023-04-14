@@ -49,5 +49,17 @@ Feature: Type of Tender Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	@test
+  Scenario Outline: Add data registered type of Tender Document
+    Given I login type of Tender Document username <username> and password <password>
+    When I add data registered type of Tender Document
+    Then I click button save registered type of Tender Document 
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+  
+    
  
     
