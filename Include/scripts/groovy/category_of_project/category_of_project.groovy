@@ -66,7 +66,7 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-ok_empty'))
 	}
-	
+
 	@When("I click add data category of project")
 	def AddDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,13 +78,13 @@ class category_of_project {
 	def CancelCategory() {
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-cancel_category'))
 	}
-	
+
 	@When("I add new data category of project")
 	def AddNewDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
-		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Academy')
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Ops')
 	}
 
 	@Then("I click button save category of project")
@@ -92,7 +92,7 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
 	}
-	
+
 	@When("I add data registered category of project")
 	def AddRegisteredDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,8 +106,19 @@ class category_of_project {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-category_register'))
 	}
-	
-	
-	
-	
+
+	@When("I click button edit category of project")
+	def ClickEditDataCategory() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/button-edit_option'))
+		WebUI.clearText(findTestObject('Manage Data/Category of Project/field-inputcategory'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO X')
+	}
+
+	@Then("I click button save edit category of project")
+	def SaveEditCategory() {
+		WebUI.click(findTestObject('Manage Data/Category of Project/button-edit_category'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/button-success_edit'))
+	}
 }

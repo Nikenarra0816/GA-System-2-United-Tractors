@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Manage Data/Category of Project/button-category_regi
 
 WebUI.click(findTestObject('Manage Data/Category of Project/button-edit_option'))
 
-WebUI.setText(findTestObject('Manage Data/Category of Project/field-inputcategory'), 'CO Yuhu')
+WebUI.clearText(findTestObject('Manage Data/Category of Project/field-inputcategory'))
 
 WebUI.click(findTestObject('Manage Data/Category of Project/button-edit_category'))
 

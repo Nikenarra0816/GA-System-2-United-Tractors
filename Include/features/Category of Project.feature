@@ -59,6 +59,18 @@ Feature: Category Of Project
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	@test
+  Scenario Outline: Edit data category of project
+    Given I login category username <username> and password <password>
+    When I click button edit category of project
+    Then I click button save edit category of project
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+
+    
     
     
     
