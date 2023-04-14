@@ -29,4 +29,13 @@ Feature: Type of Tender Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+  @test
+  Scenario Outline: Cancel add data type of Tender Document
+    Given I login type of Tender Document username <username> and password <password>
+    When I click add data type of Tender Document
+    Then I click button cancel type of Tender Document 
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
     
