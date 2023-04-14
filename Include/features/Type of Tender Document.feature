@@ -59,6 +59,18 @@ Feature: Type of Tender Document
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+  @test
+  Scenario Outline: Edit data type of DnD Document
+    Given I login type of Tender Document username <username> and password <password>
+    When I click button edit type of Tender Document
+    Then I click button save edit type of Tender Document 
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+    
+    
   
     
  
