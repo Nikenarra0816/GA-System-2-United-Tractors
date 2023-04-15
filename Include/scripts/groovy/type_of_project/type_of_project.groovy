@@ -79,5 +79,19 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-cancel_typeofproject'))
 	}
 	
+	@When("I add new add data type of project")
+	def AddNewDataTypeOfProject() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-add_typeofproject'))
+		WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), 'Baru Ku')
+	}
+
+	@Then("I click button save type of project")
+	def SaveRegisteredData() {
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-save_typeofproject'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-success_typeofproject'))
+	}
+	
 	
 }

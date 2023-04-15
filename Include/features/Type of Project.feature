@@ -39,4 +39,16 @@ Feature: Type of Project
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+  @test
+  Scenario Outline: Add data new type of project
+   	Given I login type of project username <username> and password <password>
+    When I add new add data type of project
+    Then I click button save type of project
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
+    
+    
     
