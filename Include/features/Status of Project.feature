@@ -49,5 +49,16 @@ Feature: Status of project
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	@test
+  Scenario Outline: Add data registered status of project
+    Given I login status of project username <username> and password <password>
+    When I add data registered status of project
+    Then I click button save registered status of project
+
+   Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+
       
       

@@ -84,13 +84,27 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
-		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Hold')
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Backlog')
 	}
 
 	@Then("I click button save status of project")
 	def SaveStatusofproject() {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-berhasiltambahdata'))
+	}
+	
+	@When("I add data registered status of project")
+	def ClickNewDataStatus() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Hold')
+	}
+
+	@Then("I click button save registered status of project")
+	def SaveStatus() {
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-dataregistered'))
 	}
 	
 }
