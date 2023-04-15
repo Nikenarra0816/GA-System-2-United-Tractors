@@ -79,5 +79,18 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-cancel_statusofproject'))
 	}
 	
+	@When("I add new status of project")
+	def ClickNewStatus() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Hold')
+	}
+
+	@Then("I click button save status of project")
+	def SaveStatusofproject() {
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-berhasiltambahdata'))
+	}
 	
 }

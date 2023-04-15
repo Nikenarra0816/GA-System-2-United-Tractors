@@ -38,3 +38,16 @@ Feature: Status of project
    Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+	@test
+  Scenario Outline: Add data new status of project
+    Given I login status of project username <username> and password <password>
+    When I add new status of project
+    Then I click button save status of project
+
+   Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+      
+      
