@@ -59,6 +59,16 @@ Feature: Type of Project
     | username  | password | 
     | gdsechead | 123qwe* | 
     
+	@test
+  Scenario Outline: Edit data type of project
+   	Given I login type of project username <username> and password <password>
+    When I click button edit type of project
+    Then I click button save edit type of project
+
+    Examples: 
+    | username  | password | 
+    | gdsechead | 123qwe* | 
+    
     
     
     

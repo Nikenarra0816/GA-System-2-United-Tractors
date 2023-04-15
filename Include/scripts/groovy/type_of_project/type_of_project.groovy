@@ -84,7 +84,7 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-add_typeofproject'))
-		WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), 'QQ')
+		WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), 'WWW')
 	}
 
 	@Then("I click button save type of project")
@@ -105,6 +105,21 @@ class type_of_project {
 	def SaveRegisteredCategory() {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-category_register'))
+	}
+	
+	@When("I click button edit type of project")
+	def ClickEditDataProject() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-optionedit'))
+		WebUI.clearText(findTestObject('Manage Data/Type of Project/field-type_of_project'))
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Onsite Niken')
+	}
+
+	@Then("I click button save edit type of project")
+	def SaveEditCategory() {
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-click_edit'))
+		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_edit'))
 	}
 	
 	
