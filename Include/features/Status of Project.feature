@@ -19,11 +19,21 @@
 @tag
 Feature: Status of project
 
-  @tag1
+  @test
   Scenario Outline: Add data empty status of project
     Given I login status of project username <username> and password <password>
     When I add new data empty status of project
     Then I click button save empty data
+
+   Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+  @test
+  Scenario Outline: Cancel add status of project
+    Given I login status of project username <username> and password <password>
+    When I click add status of project
+    Then I click button save of project
 
    Examples: 
       | username  | password | 

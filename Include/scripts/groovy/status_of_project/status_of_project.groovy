@@ -61,10 +61,23 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
 	}
 
-
 	@Then("I click button save empty data")
 	def Save() {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-empty_statusofproject'))
 	}
+	
+	@When("I click add status of project")
+	def ClickAddStatusProject() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
+	}
+
+	@Then("I click button save of project")
+	def Cancel() {
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-cancel_statusofproject'))
+	}
+	
+	
 }
