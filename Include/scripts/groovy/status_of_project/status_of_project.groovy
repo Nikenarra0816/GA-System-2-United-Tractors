@@ -84,7 +84,7 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
-		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Backlog')
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Backlog #2')
 	}
 
 	@Then("I click button save status of project")
@@ -105,6 +105,21 @@ class status_of_project {
 	def SaveStatus() {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-dataregistered'))
+	}
+	
+	@When("I click button edit and edit data registered status of project")
+	def ClickEditDataStatus() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-editoption'))
+		WebUI.clearText(findTestObject('Manage Data/Status of Project/field-input_status_project'))
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Todo')
+	}
+
+	@Then("I click button save edit status of project")
+	def SaveEdit() {
+		WebUI.click(findTestObject('Manage Data/Type of Project/button-click_edit'))
+		WebUI.click(findTestObject('Manage Data/Status of Project/button-success_edit'))
 	}
 	
 }

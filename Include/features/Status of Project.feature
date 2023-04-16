@@ -57,7 +57,19 @@ Feature: Status of project
 
    Examples: 
       | username  | password | 
-      | gdsechead | 123qwe* | 
+      | gdsechead | 123qwe* |
+      
+	@test
+  Scenario Outline: Edit data status of project
+    Given I login status of project username <username> and password <password>
+    When I click button edit and edit data registered status of project
+    Then I click button save edit status of project
+
+   Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* |  
+      
+  
       
 
       

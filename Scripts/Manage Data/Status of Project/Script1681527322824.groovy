@@ -42,3 +42,5 @@ WebUI.click(findTestObject('Manage Data/Type of Project/button-click_edit'))
 
 WebUI.click(findTestObject('Manage Data/Status of Project/button-success_edit'))
 
+WebUI.clearText(findTestObject('Manage Data/Status of Project/field-input_status_project'))
+
