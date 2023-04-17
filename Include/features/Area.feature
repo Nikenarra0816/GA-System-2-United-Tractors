@@ -19,7 +19,7 @@
 @tag
 Feature: Area
 
-  @tag1
+  @test
   Scenario Outline: Add data empty area
     Given I login area username <username> and password <password>
     When I add new data empty area
@@ -29,4 +29,14 @@ Feature: Area
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	Scenario Outline: Cancel add data empty area
+    Given I login area username <username> and password <password>
+    When I click add data area
+    Then I click button cancel area 
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+
       

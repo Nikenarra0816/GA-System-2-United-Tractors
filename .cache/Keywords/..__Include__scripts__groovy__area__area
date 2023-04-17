@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "7571875D93E05A08BD8CF0C6801523D8",
+  "keywordFileContentHash": "3460BA507401314882DAE612D373D886",
   "keywordClasses": [
     {
       "name": "area.area",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

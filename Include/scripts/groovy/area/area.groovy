@@ -66,4 +66,18 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
 		WebUI.click(findTestObject('Manage Data/Area/button-oke_empty'))
 	}
+	
+	@When("I click add data area")
+	def AddDataArea() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
+		WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
+	}
+
+	@Then("I click button cancel area")
+	def CancelArea() {
+		WebUI.click(findTestObject('Manage Data/Area/button-cancel'))
+	}
+	
+	
 }
