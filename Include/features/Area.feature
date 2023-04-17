@@ -29,7 +29,7 @@ Feature: Area
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-	Scenario Outline: Cancel add data empty area
+	Scenario Outline: Cancel add data area
     Given I login area username <username> and password <password>
     When I click add data area
     Then I click button cancel area 
@@ -37,6 +37,16 @@ Feature: Area
   Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  Scenario Outline: Add data new data area
+    Given I login area username <username> and password <password>
+    When I add new data area
+    Then I click button save area 
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+  
       
 
       

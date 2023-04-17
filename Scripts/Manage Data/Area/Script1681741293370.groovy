@@ -24,23 +24,23 @@ WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
 
 WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
 
-WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '687')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Sidoarjo')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Sidoarjo No 31')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '7°35\'18.0"S 111°53\'29.8"E')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-longitude'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-longitude'), '8°45\'15.0"S 111°22\'11.1"E')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-telepon'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-telepon'), '085156755614')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-pimpinan'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-pimpinan'), 'Fahrul')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '25')
 
-WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '')
+WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '50')
 
 WebUI.click(findTestObject('Manage Data/Area/button-save'))
 
