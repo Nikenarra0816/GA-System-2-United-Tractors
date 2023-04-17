@@ -84,14 +84,14 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
 		WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
-		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '119')
-		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Jogja')
-		WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Jogja No 31')
-		WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '7°35\'19.0"S 111°53\'29.8"E')
+		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '222')
+		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Jogja Baru')
+		WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Jogja No 38')
+		WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '7°35\'19.0"S 111°588\'29.8"E')
 		WebUI.setText(findTestObject('Manage Data/Area/input-longitude'), '8°45\'11.0"S 111°22\'11.1"E')
-		WebUI.setText(findTestObject('Manage Data/Area/input-telepon'), '085156755111')
-		WebUI.setText(findTestObject('Manage Data/Area/input-pimpinan'), 'Gunawan')
-		WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '15')
+		WebUI.setText(findTestObject('Manage Data/Area/input-telepon'), '0851567786111')
+		WebUI.setText(findTestObject('Manage Data/Area/input-pimpinan'), 'Gunawan S')
+		WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '55')
 		WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '60')
 	}
 
@@ -121,6 +121,21 @@ class area {
 	def SaveRegisteresArea() {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
 		WebUI.click(findTestObject('Manage Data/Area/button-okeregisterd'))
+	}
+	
+	@When("I click button edit and edit data area")
+	def ClickEditArea() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
+		WebUI.click(findTestObject('Manage Data/Area/button-option_edit'))
+		WebUI.clearText(findTestObject('Manage Data/Area/input-areaname'))
+		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Palembang')
+	}
+
+	@Then("I click button save edit area")
+	def SaveEditArea() {
+		WebUI.click(findTestObject('Manage Data/Area/button-klikedit'))
+		WebUI.click(findTestObject('Manage Data/Area/button-ok_successedit'))
 	}
 	
 	

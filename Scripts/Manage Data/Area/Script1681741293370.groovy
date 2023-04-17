@@ -42,6 +42,8 @@ WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '25')
 
 WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '50')
 
+WebUI.click(findTestObject('Manage Data/Area/button-ok_successedit'))
+
 WebUI.click(findTestObject('Manage Data/Area/button-save'))
 
 WebUI.click(findTestObject('Manage Data/Area/button-oke_success'))

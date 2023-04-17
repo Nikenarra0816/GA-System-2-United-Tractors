@@ -55,6 +55,15 @@ Feature: Area
   Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  Scenario Outline: Edit data registered area
+    Given I login area username <username> and password <password>
+    When I click button edit and edit data area
+    Then I click button save edit area 
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
   
       
 
