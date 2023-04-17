@@ -84,6 +84,28 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
 		WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
+		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '119')
+		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Jogja')
+		WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Jogja No 31')
+		WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '7°35\'19.0"S 111°53\'29.8"E')
+		WebUI.setText(findTestObject('Manage Data/Area/input-longitude'), '8°45\'11.0"S 111°22\'11.1"E')
+		WebUI.setText(findTestObject('Manage Data/Area/input-telepon'), '085156755111')
+		WebUI.setText(findTestObject('Manage Data/Area/input-pimpinan'), 'Gunawan')
+		WebUI.setText(findTestObject('Manage Data/Area/input-jumlah_karyawan'), '15')
+		WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '60')
+	}
+
+	@Then("I click button save area")
+	def SaveRegisArea() {
+		WebUI.click(findTestObject('Manage Data/Area/button-save'))
+		WebUI.click(findTestObject('Manage Data/Area/button-oke_success'))
+	}
+	
+	@When("I add data registered area")
+	def AddDataRegisteredArea() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
+		WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
 		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '687')
 		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Sidoarjo')
 		WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Sidoarjo No 31')
@@ -95,10 +117,10 @@ class area {
 		WebUI.setText(findTestObject('Manage Data/Area/input-luas_lahan'), '50')
 	}
 
-	@Then("I click button save area")
-	def SaveRegisArea() {
+	@Then("I click button save registered area")
+	def SaveRegisteresArea() {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
-		WebUI.click(findTestObject('Manage Data/Area/button-oke_success'))
+		WebUI.click(findTestObject('Manage Data/Area/button-okeregisterd'))
 	}
 	
 	

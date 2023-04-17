@@ -46,6 +46,15 @@ Feature: Area
   Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  Scenario Outline: Add data registered area
+    Given I login area username <username> and password <password>
+    When I add data registered area
+    Then I click button save registered area 
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
   
       
 
