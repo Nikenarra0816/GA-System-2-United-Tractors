@@ -39,6 +39,16 @@ Feature: Vendor
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	@test
+  Scenario Outline: Add data new data vendor
+    Given I login vendor username <username> and password <password>
+    When I add new add data vendor
+    Then I click button save vendor
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
   
       
       

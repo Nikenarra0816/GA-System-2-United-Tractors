@@ -24,19 +24,19 @@ WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
 
 WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor BigCo')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Fatih')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'fatih@getnada.com')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Malang ')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '085187282776')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), 'Fatih C')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-jabatan_vendor'), '')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-jabatan_vendor'), 'CEO')
 
 WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 
