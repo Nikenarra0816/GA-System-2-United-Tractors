@@ -59,6 +59,16 @@ Feature: Vendor
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+ @test
+  Scenario Outline: Edit data registered vendor
+    Given I login vendor username <username> and password <password>
+    When I click button edit and edit data vendor
+    Then I click button save edit vendor
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
       
   
       

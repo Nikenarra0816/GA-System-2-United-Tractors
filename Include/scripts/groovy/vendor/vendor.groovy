@@ -66,7 +66,7 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_empty'))
 	}
-	
+
 	@When("I click add data vendor")
 	def Adddatavendor() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,18 +78,18 @@ class vendor {
 	def CancelVendor() {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-cancel'))
 	}
-	
+
 	@When("I add new add data vendor")
 	def Addnewvendor() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor Sip')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Sipy')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'sipy@getnada.com')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Sip ')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '088232833321')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), 'Sipy C')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor Yura Yunita')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Yura')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'yura@getnada.com')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Yura ')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '081625661726')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), 'Yura')
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-jabatan_vendor'), 'CEO')
 	}
 
@@ -98,7 +98,7 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_success'))
 	}
-	
+
 	@When("I add data registered vendor")
 	def AddRegisteredvendor() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -118,7 +118,19 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_registered'))
 	}
-	
-	
-	
+
+	@When("I click button edit and edit data vendor")
+	def AddEditVendor() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-option_edit'))
+		WebUI.clearText(findTestObject('Manage Data/Vendor/input-name_vendor'))
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendornya Niken')
+	}
+
+	@Then("I click button save edit vendor")
+	def SaveEditVendor() {
+		WebUI.click(findTestObject('Manage Data/Vendor/button-editdata'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-ok_succes_edit'))
+	}
 }

@@ -42,6 +42,8 @@ WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 
 WebUI.click(findTestObject('Manage Data/Vendor/button-oke_success'))
 
+WebUI.clearText(findTestObject('Manage Data/Vendor/input-name_vendor'))
+
 WebUI.click(findTestObject('Manage Data/Vendor/button-cancel'))
 
 WebUI.click(findTestObject('Manage Data/Vendor/button-oke_empty'))
