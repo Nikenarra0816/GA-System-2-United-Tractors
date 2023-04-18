@@ -66,4 +66,16 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_empty'))
 	}
+	
+	@When("I click add data vendor")
+	def Adddatavendor() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
+	}
+
+	@Then("I click button cancel vendor")
+	def CancelVendor() {
+		WebUI.click(findTestObject('Manage Data/Vendor/button-cancel'))
+	}
 }

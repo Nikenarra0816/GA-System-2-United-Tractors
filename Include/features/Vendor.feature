@@ -19,7 +19,7 @@
 @tag
 Feature: Vendor
 
-  @tag1
+  @test
   Scenario Outline: Add data empty vendor
     Given I login vendor username <username> and password <password>
     When I add new data empty vendor
@@ -28,5 +28,17 @@ Feature: Vendor
   Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  @test
+  Scenario Outline: Cancel add data vendor
+    Given I login vendor username <username> and password <password>
+    When I click add data vendor
+    Then I click button cancel vendor
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+  
       
       
