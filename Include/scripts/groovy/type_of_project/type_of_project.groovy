@@ -66,7 +66,7 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-save_typeofproject'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-empty_typeofproject'))
 	}
-	
+
 	@When("I click add data type of project")
 	def AddDataTypeOfProject() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,7 +78,7 @@ class type_of_project {
 	def CancelData() {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-cancel_typeofproject'))
 	}
-	
+
 	@When("I add new add data type of project")
 	def AddNewDataTypeOfProject() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -92,7 +92,7 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-save_typeofproject'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-success_typeofproject'))
 	}
-	
+
 	@When("I add data registerd type of project")
 	def AddRegisteredDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +106,7 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 		WebUI.click(findTestObject('Manage Data/Category of Project/button-category_register'))
 	}
-	
+
 	@When("I click button edit type of project")
 	def ClickEditDataProject() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,6 +121,4 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-click_edit'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_edit'))
 	}
-	
-	
 }

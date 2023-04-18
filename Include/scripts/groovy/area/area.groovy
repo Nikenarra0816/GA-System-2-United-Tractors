@@ -66,7 +66,7 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
 		WebUI.click(findTestObject('Manage Data/Area/button-oke_empty'))
 	}
-	
+
 	@When("I click add data area")
 	def AddDataArea() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,7 +78,7 @@ class area {
 	def CancelArea() {
 		WebUI.click(findTestObject('Manage Data/Area/button-cancel'))
 	}
-	
+
 	@When("I add new data area")
 	def AddNewArea() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -100,7 +100,7 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
 		WebUI.click(findTestObject('Manage Data/Area/button-oke_success'))
 	}
-	
+
 	@When("I add data registered area")
 	def AddDataRegisteredArea() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -122,7 +122,7 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Area/button-save'))
 		WebUI.click(findTestObject('Manage Data/Area/button-okeregisterd'))
 	}
-	
+
 	@When("I click button edit and edit data area")
 	def ClickEditArea() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -137,8 +137,4 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Area/button-klikedit'))
 		WebUI.click(findTestObject('Manage Data/Area/button-ok_successedit'))
 	}
-	
-	
-	
-	
 }
