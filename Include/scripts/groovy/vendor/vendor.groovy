@@ -84,6 +84,26 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor Sip')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Sipy')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'sipy@getnada.com')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Sip ')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '088232833321')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), 'Sipy C')
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-jabatan_vendor'), 'CEO')
+	}
+
+	@Then("I click button save vendor")
+	def SaveNewVendor() {
+		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_success'))
+	}
+	
+	@When("I add data registered vendor")
+	def AddRegisteredvendor() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor BigCo')
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Fatih')
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'fatih@getnada.com')
@@ -93,10 +113,12 @@ class vendor {
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-jabatan_vendor'), 'CEO')
 	}
 
-	@Then("I click button save vendor")
-	def SaveNewVendor() {
+	@Then("I click button save registered vendor")
+	def SaveRegisterVendor() {
 		WebUI.click(findTestObject('Manage Data/Vendor/button-save'))
-		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_success'))
+		WebUI.click(findTestObject('Manage Data/Vendor/button-oke_registered'))
 	}
+	
+	
 	
 }

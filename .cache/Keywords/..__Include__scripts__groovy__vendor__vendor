@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "BFA248AD37F88BDF4D340592E3BD37D1",
+  "keywordFileContentHash": "C8BB3534100C542E39EA7A70801BC941",
   "keywordClasses": [
     {
       "name": "vendor.vendor",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

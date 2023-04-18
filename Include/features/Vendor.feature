@@ -49,6 +49,17 @@ Feature: Vendor
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+ @test
+  Scenario Outline: Add data registered vendor
+    Given I login vendor username <username> and password <password>
+    When I add data registered vendor
+    Then I click button save registered vendor
+
+  Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+      
   
       
       
