@@ -49,6 +49,23 @@ Feature: Newsletter
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	@test
+  Scenario Outline: Edit data newsletter
+    Given I login newsletter username <username> and password <password>
+    When I click button edit and edit newsletter
+    Then I click button save edit newsletter
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+      
+      
+      
+
+      
+
+      
   
       
       

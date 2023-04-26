@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "BF220C5ABA84CC6AA5ED7517676070AB",
+  "keywordFileContentHash": "658BBD9C7683F407CA0CF090FC9F3AB3",
   "keywordClasses": [
     {
       "name": "newsletter.newsletter",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

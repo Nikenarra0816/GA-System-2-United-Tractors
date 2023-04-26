@@ -84,7 +84,7 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/submenu-newsletter'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/button-addnewsletter'))
-		WebUI.setText(findTestObject('Manage Data/Newsletter/input-title_newsletter'), 'News Inspector')
+		WebUI.setText(findTestObject('Manage Data/Newsletter/input-title_newsletter'), 'News Feature')
 		WebUI.setText(findTestObject('Manage Data/Newsletter/input-content'), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea')
 		WebUI.click(findTestObject('Manage Data/Newsletter/checklist-publish'))
 		WebUI.uploadFile(findTestObject('Manage Data/Newsletter/upload-img'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyImage\\file.jpeg')
@@ -95,4 +95,20 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-save'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-okesukses'))
 	}
+	
+	@When("I click button edit and edit newsletter")
+	def ClickEdit() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/submenu-newsletter'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-option_edit'))
+		WebUI.clearText(findTestObject('Manage Data/Newsletter/input-title_newsletter'))
+		WebUI.setText(findTestObject('Manage Data/Newsletter/input-title_newsletter'), 'News Wording')
+	}
+
+	@Then("I click button save edit newsletter")
+	def SaveEditNewsletter() {
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-edit'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-oke_edit'))
+	}
+	
 }

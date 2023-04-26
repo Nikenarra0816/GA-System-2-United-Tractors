@@ -30,6 +30,8 @@ WebUI.setText(findTestObject('Manage Data/Newsletter/input-title_newsletter'), '
 
 WebUI.setText(findTestObject('Manage Data/Newsletter/input-content'), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea')
 
+WebUI.clearText(findTestObject('Manage Data/Newsletter/input-title_newsletter'))
+
 WebUI.click(findTestObject('Manage Data/Newsletter/checklist-publish'))
 
 WebUI.uploadFile(findTestObject('Manage Data/Newsletter/upload-img'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyImage\\file.jpeg')
