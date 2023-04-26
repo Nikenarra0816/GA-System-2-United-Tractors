@@ -66,7 +66,7 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-save'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-oke_empty'))
 	}
-	
+
 	@When("I click add data newsletter")
 	def ClickAdd() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -77,5 +77,22 @@ class newsletter {
 	@Then("I click button cancel newsletter")
 	def Cancel() {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-cancel'))
+	}
+
+	@When("I add new data newsletter")
+	def ClickNewData() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/submenu-newsletter'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/button-addnewsletter'))
+		WebUI.setText(findTestObject('Manage Data/Newsletter/input-title_newsletter'), 'News Inspector')
+		WebUI.setText(findTestObject('Manage Data/Newsletter/input-content'), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea')
+		WebUI.click(findTestObject('Manage Data/Newsletter/checklist-publish'))
+		WebUI.uploadFile(findTestObject('Manage Data/Newsletter/upload-img'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyImage\\file.jpeg')
+	}
+
+	@Then("I click button save newsletter")
+	def SaveNewsletter() {
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-save'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-okesukses'))
 	}
 }

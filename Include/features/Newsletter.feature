@@ -30,10 +30,20 @@ Feature: Newsletter
       | gdsechead | 123qwe* | 
       
 	@test
-  Scenario Outline: Cancel data empty newsletter
+  Scenario Outline: Cancel data newsletter
     Given I login newsletter username <username> and password <password>
     When I click add data newsletter
     Then I click button cancel newsletter
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+	@test
+  Scenario Outline: Add data new newsletter
+    Given I login newsletter username <username> and password <password>
+    When I add new data newsletter
+    Then I click button save newsletter
 
     Examples: 
       | username  | password | 
