@@ -66,4 +66,16 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-save'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-oke_empty'))
 	}
+	
+	@When("I click add data newsletter")
+	def ClickAdd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/submenu-newsletter'))
+		WebUI.click(findTestObject('Manage Data/Newsletter/button-addnewsletter'))
+	}
+
+	@Then("I click button cancel newsletter")
+	def Cancel() {
+		WebUI.click(findTestObject('Manage Data/Newsletter/btn-cancel'))
+	}
 }
