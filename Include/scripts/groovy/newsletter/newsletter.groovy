@@ -95,7 +95,7 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-save'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-okesukses'))
 	}
-	
+
 	@When("I click button edit and edit newsletter")
 	def ClickEdit() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -110,5 +110,4 @@ class newsletter {
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-edit'))
 		WebUI.click(findTestObject('Manage Data/Newsletter/btn-oke_edit'))
 	}
-	
 }
