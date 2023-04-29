@@ -84,7 +84,7 @@ class pro_stand {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Pro Stand/submenu-pro_stand'))
 		WebUI.click(findTestObject('Manage Data/Pro Stand/button-add_pro_stand'))
-		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-title_pro_stand'), 'PANDUAN INSPECTOR TERBARU')
+		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-title_pro_stand'), 'PANDUAN INSPECTOR TERBARU BGT')
 		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-description'), 'description')
 		WebUI.click(findTestObject('Manage Data/Pro Stand/checklist-publish'))
 		WebUI.uploadFile(findTestObject('Manage Data/Pro Stand/upload-file'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyFile\\file.pdf')
@@ -96,7 +96,19 @@ class pro_stand {
 		WebUI.click(findTestObject('Manage Data/Pro Stand/button-oke_create'))
 	}
 	
-	
-	
-	
+	@When("I click button edit and edit pro stand")
+	def ClickEdit() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/submenu-pro_stand'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-edit_option'))
+		WebUI.clearText(findTestObject('Manage Data/Pro Stand/input-title_pro_stand'))
+		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-title_pro_stand'), 'PANDUAN INSPECTOR 2024')
+		WebUI.uploadFile(findTestObject('Manage Data/Pro Stand/upload-file'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyFile\\file.pdf')
+	}
+
+	@Then("I click button save edit pro stand")
+	def SaveEditProStand() {
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-edit_prostand'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-ok_edit'))
+	}
 }

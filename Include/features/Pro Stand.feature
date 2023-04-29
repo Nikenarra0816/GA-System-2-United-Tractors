@@ -48,6 +48,16 @@ Feature: Pro Stand
      Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+	@test
+  Scenario Outline: Edit data pro stand
+    Given I login prostand username <username> and password <password>
+    When I click button edit and edit pro stand
+    Then I click button save edit pro stand
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
  
  
       
