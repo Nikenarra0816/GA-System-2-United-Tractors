@@ -38,6 +38,17 @@ Feature: Pro Stand
      Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+	@test
+  Scenario Outline: Add data new pro stand 
+    Given I login prostand username <username> and password <password>
+    When I add new data pro stand
+    Then I click button save pro stand 
+
+     Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+ 
  
       
       

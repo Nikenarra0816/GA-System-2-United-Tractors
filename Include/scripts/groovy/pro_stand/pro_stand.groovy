@@ -79,5 +79,24 @@ class pro_stand {
 		WebUI.click(findTestObject('Manage Data/Pro Stand/button-cancel'))
 	}
 	
+	@When("I add new data pro stand")
+	def ClickNewData() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/submenu-pro_stand'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-add_pro_stand'))
+		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-title_pro_stand'), 'PANDUAN INSPECTOR TERBARU')
+		WebUI.setText(findTestObject('Manage Data/Pro Stand/input-description'), 'description')
+		WebUI.click(findTestObject('Manage Data/Pro Stand/checklist-publish'))
+		WebUI.uploadFile(findTestObject('Manage Data/Pro Stand/upload-file'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyFile\\file.pdf')
+	}
+
+	@Then("I click button save pro stand")
+	def SaveProStand() {
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-save'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-oke_create'))
+	}
+	
+	
+	
 	
 }
