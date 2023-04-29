@@ -66,4 +66,18 @@ class pro_stand {
 		WebUI.click(findTestObject('Manage Data/Pro Stand/button-save'))
 		WebUI.click(findTestObject('Manage Data/Pro Stand/button-empty'))
 	}
+	
+	@When("I click add data pro stand")
+	def ClickAddProStand() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/submenu-pro_stand'))
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-add_pro_stand'))
+	}
+
+	@Then("I click button cancel pro stand")
+	def Cancel() {
+		WebUI.click(findTestObject('Manage Data/Pro Stand/button-cancel'))
+	}
+	
+	
 }

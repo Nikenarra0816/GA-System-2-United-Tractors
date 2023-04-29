@@ -29,5 +29,16 @@ Feature: Pro Stand
       | username  | password | 
       | gdsechead | 123qwe* | 
       
+	@test
+  Scenario Outline: Cancel data pro stand 
+    Given I login prostand username <username> and password <password>
+    When I click add data pro stand
+    Then I click button cancel pro stand 
+
+     Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+ 
+      
       
       
