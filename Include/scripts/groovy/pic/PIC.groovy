@@ -48,18 +48,22 @@ class PIC {
 	/**
 	 * The step definitions below match with Katalon sample Gherkin steps
 	 */
-	@Given("I want to write a step with (.*)")
-	def I_want_to_write_a_step_with_name(String name) {
-		println name
+	@Given("I login pic username (.*) and password (.*)")
+	def login(String username, String password) {
+		WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [('username') : username, ('password') : password],
+		FailureHandling.STOP_ON_FAILURE)
 	}
 
-	@When("I check for the (\\d+) in step")
-	def I_check_for_the_value_in_step(int value) {
-		println value
+	@When("I add new data empty pic")
+	def AddNewsletter() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/PIC/submenu-pic'))
+		WebUI.click(findTestObject('Manage Data/PIC/button-add_pic'))
 	}
 
-	@Then("I verify the (.*) in step")
-	def I_verify_the_status_in_step(String status) {
-		println status
+	@Then("I click button save empty pic")
+	def Save() {
+		WebUI.click(findTestObject('Manage Data/PIC/button-save'))
+		WebUI.click(findTestObject('Manage Data/PIC/button-empty'))
 	}
 }

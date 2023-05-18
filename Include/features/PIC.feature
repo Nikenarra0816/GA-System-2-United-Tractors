@@ -17,16 +17,17 @@
 ## (Comments)
 #Sample Feature Definition Template
 @tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: PIC
 
-  @tag1
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  @test
+  Scenario Outline: Add data empty pic
+    Given I login pic username <username> and password <password>
+    When I add new data empty pic
+    Then I click button save empty pic
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+      
+      
+      
