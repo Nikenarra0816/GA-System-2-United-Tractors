@@ -38,5 +38,15 @@ Feature: PIC
     Examples: 
       | username  | password | 
       | gdsechead | 123qwe* | 
+      
+  @test
+  Scenario Outline: Add data new pic
+    Given I login pic username <username> and password <password>
+    When I add new data pic
+    Then I click button save pic
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
   
       
