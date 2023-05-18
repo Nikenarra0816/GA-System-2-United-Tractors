@@ -66,4 +66,16 @@ class PIC {
 		WebUI.click(findTestObject('Manage Data/PIC/button-save'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-empty'))
 	}
+	
+	@When("I click add data pic")
+	def ClickAdd() {
+		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
+		WebUI.click(findTestObject('Manage Data/PIC/submenu-pic'))
+		WebUI.click(findTestObject('Manage Data/PIC/button-add_pic'))
+	}
+	
+	@Then("I click button cancel pic")
+	def Cancel() {
+		WebUI.click(findTestObject('Manage Data/PIC/button-cancel'))
+	}
 }

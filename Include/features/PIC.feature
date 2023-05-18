@@ -29,5 +29,14 @@ Feature: PIC
       | username  | password | 
       | gdsechead | 123qwe* | 
       
-      
+  @test
+  Scenario Outline: Cancel data pic
+    Given I login pic username <username> and password <password>
+    When I click add data pic
+    Then I click button cancel pic
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
+  
       
