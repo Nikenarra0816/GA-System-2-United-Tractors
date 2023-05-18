@@ -49,4 +49,13 @@ Feature: PIC
       | username  | password | 
       | gdsechead | 123qwe* | 
   
+  @test
+  Scenario Outline: Edit data new pic
+    Given I login pic username <username> and password <password>
+    When I click button edit and edit pic
+    Then I click button save edit pic
+
+    Examples: 
+      | username  | password | 
+      | gdsechead | 123qwe* | 
       
