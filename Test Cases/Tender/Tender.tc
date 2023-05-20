@@ -5,4 +5,43 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ad6b94c3-a2a7-46ce-9362-9098a3d70ef2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f8491e3-8e99-417a-8f45-f1598ff5d296</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7a32a1ec-eabf-4baf-bad6-3f56d6fbf6cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>90ff788f-8aa7-4aaa-83eb-099bc3a91516</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Kontraktor_' + GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>9f8491e3-8e99-417a-8f45-f1598ff5d296</id>
+      <masked>false</masked>
+      <name>namaKontraktor</name>
+   </variable>
+   <variable>
+      <defaultValue>'Niken_'+ GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>7a32a1ec-eabf-4baf-bad6-3f56d6fbf6cb</id>
+      <masked>false</masked>
+      <name>vendorPIC</name>
+   </variable>
+   <variable>
+      <defaultValue>'akuntest+' + GlobalVariable.RandomNumber + '@gmail.com'</defaultValue>
+      <description></description>
+      <id>90ff788f-8aa7-4aaa-83eb-099bc3a91516</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
 </TestCaseEntity>

@@ -82,9 +82,12 @@ class tender {
 	def AddNewTender() {
 		WebUI.click(findTestObject('Tender/menu-tender'))
 		WebUI.click(findTestObject('Tender/button-add-vendor'))
-		WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'O Contractor')
-		WebUI.setText(findTestObject('Tender/field-vendorpic'), 'O')
-		WebUI.setText(findTestObject('Tender/field-email'), 'o@getnada.com')
+		def namaKontraktor = 'Kontraktor_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Tender/field-namakontraktor'), namaKontraktor)
+		def vendorPIC = 'Niken_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Tender/field-vendorpic'), vendorPIC)
+		def email = 'akuntest+' + GlobalVariable.RandomNumber + '@gmail.com'
+		WebUI.setText(findTestObject('Tender/field-email'), email)
 		WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Palembang')
 		WebUI.setText(findTestObject('Tender/field-telepon'), '085434554567')
 		WebUI.setText(findTestObject('Tender/field-namavendorttd'), 'O')

@@ -24,11 +24,11 @@ WebUI.click(findTestObject('Tender/menu-tender'))
 
 WebUI.click(findTestObject('Tender/button-add-vendor'))
 
-WebUI.setText(findTestObject('Tender/field-namakontraktor'), 'Hallco')
+WebUI.setText(findTestObject('Tender/field-namakontraktor'), namaKontraktor)
 
-WebUI.setText(findTestObject('Tender/field-vendorpic'), 'Niken')
+WebUI.setText(findTestObject('Tender/field-vendorpic'), vendorPIC)
 
-WebUI.setText(findTestObject('Tender/field-email'), 'halco@getnada.com')
+WebUI.setText(findTestObject('Tender/field-email'), email)
 
 WebUI.setText(findTestObject('Tender/field-alamatkantor'), 'Jakarta')
 
