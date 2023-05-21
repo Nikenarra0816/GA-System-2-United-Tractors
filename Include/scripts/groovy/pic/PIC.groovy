@@ -66,29 +66,33 @@ class PIC {
 		WebUI.click(findTestObject('Manage Data/PIC/button-save'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-empty'))
 	}
-	
+
 	@When("I click add data pic")
 	def ClickAdd() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/PIC/submenu-pic'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-add_pic'))
 	}
-	
+
 	@Then("I click button cancel pic")
 	def Cancel() {
 		WebUI.click(findTestObject('Manage Data/PIC/button-cancel'))
 	}
-	
+
 	@When("I add new data pic")
 	def ClickNewData() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/PIC/submenu-pic'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-add_pic'))
-		WebUI.setText(findTestObject('Manage Data/PIC/input-fullname'), 'Zitty Entana')
-		WebUI.setText(findTestObject('Manage Data/PIC/input-email'), 'zitty@getnada.com')
+		def name_pic = 'Niken Arra_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/PIC/input-fullname'), name_pic)
+		def email_pic ='akuntest+' + GlobalVariable.RandomNumber + '@gmail.com'
+		WebUI.setText(findTestObject('Manage Data/PIC/input-email'), email_pic)
 		WebUI.click(findTestObject('Manage Data/PIC/radio-buttonPICP'), FailureHandling.STOP_ON_FAILURE)
-		WebUI.setText(findTestObject('Manage Data/PIC/input-username'), 'Zity')
-		WebUI.setText(findTestObject('Manage Data/PIC/input-code'), '897')
+		def username = 'Username_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/PIC/input-username'), username)
+		def code = '' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/PIC/input-code'), code)
 		WebUI.setText(findTestObject('Manage Data/PIC/input-phone'), '085156822134')
 		WebUI.selectOptionByIndex(findTestObject('Manage Data/PIC/dropdown-area'), '2')
 		WebUI.selectOptionByIndex(findTestObject('Manage Data/PIC/dropdown-division'), '5')
@@ -100,13 +104,13 @@ class PIC {
 		WebUI.setText(findTestObject('Manage Data/PIC/input-password'), 'zity.')
 		WebUI.uploadFile(findTestObject('Manage Data/PIC/upload-file'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyImage\\files.png')
 	}
-	
+
 	@Then("I click button save pic")
 	def SaveNewsletter() {
 		WebUI.click(findTestObject('Manage Data/PIC/button-save'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-oke_create'))
 	}
-	
+
 	@When("I click button edit and edit pic")
 	def ClickEdit() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -116,14 +120,10 @@ class PIC {
 		WebUI.setText(findTestObject('Manage Data/PIC/input-fullname'), 'Zitty zzz')
 		WebUI.uploadFile(findTestObject('Manage Data/PIC/upload-file'), 'C:\\Users\\Semoga Berkah\\Katalon Studio\\Automationtest-GASys2\\Data Files\\DummyImage\\files.png')
 	}
-	
+
 	@Then("I click button save edit pic")
 	def SaveEditPIC() {
 		WebUI.click(findTestObject('Manage Data/PIC/button-edit'))
 		WebUI.click(findTestObject('Manage Data/PIC/button-oke_edit'))
 	}
-	
-	
-	
-	
 }

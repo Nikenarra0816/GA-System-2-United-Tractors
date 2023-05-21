@@ -26,15 +26,15 @@ WebUI.click(findTestObject('Manage Data/PIC/submenu-pic'))
 
 WebUI.click(findTestObject('Manage Data/PIC/button-add_pic'))
 
-WebUI.setText(findTestObject('Manage Data/PIC/input-fullname'), 'John Bornet')
+WebUI.setText(findTestObject('Manage Data/PIC/input-fullname'), name_pic)
 
-WebUI.setText(findTestObject('Manage Data/PIC/input-email'), 'john@getnada.com')
+WebUI.setText(findTestObject('Manage Data/PIC/input-email'), email_pic)
 
 WebUI.click(findTestObject('Manage Data/PIC/radio-buttonPICP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Manage Data/PIC/input-username'), 'John B')
+WebUI.setText(findTestObject('Manage Data/PIC/input-username'), username)
 
-WebUI.setText(findTestObject('Manage Data/PIC/input-code'), '888')
+WebUI.setText(findTestObject('Manage Data/PIC/input-code'), code)
 
 WebUI.setText(findTestObject('Manage Data/PIC/input-phone'), '085156922642')
 

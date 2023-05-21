@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a0a8d4e6-f1f4-4503-bc1c-5bcd9a8cd790</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>686feff4-17af-49f9-99a7-4ab473288444</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Code_area_' + GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>686feff4-17af-49f9-99a7-4ab473288444</id>
+      <masked>false</masked>
+      <name>Codearea</name>
+   </variable>
 </TestCaseEntity>

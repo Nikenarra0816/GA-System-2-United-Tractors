@@ -5,4 +5,56 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c3f0ede5-08ba-44ff-b8b3-b47f1f92ace8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e82bf955-e60e-4162-976f-f7dd39c1d657</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c3b0afe6-f9e7-4cdb-9ea4-ac96fb37e4b9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>34591a9a-59c3-40d8-aef2-442d0c55de42</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1372a5d7-21de-41b2-8479-41cddcb73a90</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Username_' + GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>e82bf955-e60e-4162-976f-f7dd39c1d657</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Niken_' + GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>c3b0afe6-f9e7-4cdb-9ea4-ac96fb37e4b9</id>
+      <masked>false</masked>
+      <name>name_pic</name>
+   </variable>
+   <variable>
+      <defaultValue>'akuntest+' + GlobalVariable.RandomNumber + '@gmail.com'</defaultValue>
+      <description></description>
+      <id>34591a9a-59c3-40d8-aef2-442d0c55de42</id>
+      <masked>false</masked>
+      <name>email_pic</name>
+   </variable>
+   <variable>
+      <defaultValue>'' + GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>1372a5d7-21de-41b2-8479-41cddcb73a90</id>
+      <masked>false</masked>
+      <name>code</name>
+   </variable>
 </TestCaseEntity>

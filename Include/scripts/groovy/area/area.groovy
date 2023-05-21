@@ -84,7 +84,8 @@ class area {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
 		WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
-		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '222')
+		def Codearea = '' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), Codearea)
 		WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Jogja Baru')
 		WebUI.setText(findTestObject('Manage Data/Area/input-area_address'), 'Jl Jogja No 38')
 		WebUI.setText(findTestObject('Manage Data/Area/input-latitude'), '7°35\'19.0"S 111°588\'29.8"E')

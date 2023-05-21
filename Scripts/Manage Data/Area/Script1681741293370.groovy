@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Manage Data/Area/submenu-area'))
 
 WebUI.click(findTestObject('Manage Data/Area/button-add_area'))
 
-WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), '687')
+WebUI.setText(findTestObject('Manage Data/Area/input-areacode'), Codearea)
 
 WebUI.setText(findTestObject('Manage Data/Area/input-areaname'), 'Sidoarjo')
 
