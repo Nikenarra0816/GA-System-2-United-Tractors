@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'
 
 WebUI.click(findTestObject('Manage Data/Type of Project/button-add_typeofproject'))
 
-WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), 'Gabungan')
+WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), type_name)
 
 WebUI.click(findTestObject('Manage Data/Type of Project/button-save_typeofproject'))
 

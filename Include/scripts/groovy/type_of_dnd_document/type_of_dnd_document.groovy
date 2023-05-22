@@ -84,7 +84,8 @@ class type_of_dnd_document {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/submenu-type_of_dnd_document'))
 		WebUI.click(findTestObject('Manage Data/Type of DnD Document/button-addtypednd'))
-		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), 'Document Z')
+		def dnd_document = 'Document_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Type of DnD Document/field-type_of_dnd'), dnd_document)
 	}
 
 	@Then("I click button save type of DnD Document")

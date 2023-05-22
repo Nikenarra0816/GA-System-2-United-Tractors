@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "B0B5C4ED6FE1FF2A8484FAA17BB5CBD0",
+  "keywordFileContentHash": "FAF84EB84A48F563F7F8902D259BECCC",
   "keywordClasses": [
     {
       "name": "category_of_project.category_of_project",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

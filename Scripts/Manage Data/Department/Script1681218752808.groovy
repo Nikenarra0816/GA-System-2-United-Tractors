@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
 
 WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
 
-WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Sales')
+WebUI.setText(findTestObject('Manage Data/Department/field-department'), departement_name)
 
 WebUI.click(findTestObject('Manage Data/Department/button-savedepartement'))
 

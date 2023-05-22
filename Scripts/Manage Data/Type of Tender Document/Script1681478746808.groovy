@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_
 
 WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
 
-WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc Vendor')
+WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), tender_doc)
 
 WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-save_type_of_tender'))
 

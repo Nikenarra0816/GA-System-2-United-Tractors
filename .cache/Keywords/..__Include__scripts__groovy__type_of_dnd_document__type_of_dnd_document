@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "460519B3F5C226CBE8FD1BE728CCE7BA",
+  "keywordFileContentHash": "D85A9C602F5744EA27973544556424AA",
   "keywordClasses": [
     {
       "name": "type_of_dnd_document.type_of_dnd_document",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

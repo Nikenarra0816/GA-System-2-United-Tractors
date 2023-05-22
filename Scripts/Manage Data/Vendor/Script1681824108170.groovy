@@ -24,11 +24,11 @@ WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
 
 WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor BigCo')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), vendor_name)
 
 WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Fatih')
 
-WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'fatih@getnada.com')
+WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), email_vendor)
 
 WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Malang ')
 

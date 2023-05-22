@@ -66,7 +66,7 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-empty_statusofproject'))
 	}
-	
+
 	@When("I click add status of project")
 	def ClickAddStatusProject() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -78,13 +78,14 @@ class status_of_project {
 	def Cancel() {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-cancel_statusofproject'))
 	}
-	
+
 	@When("I add new status of project")
 	def ClickNewStatus() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_project'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
-		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Backlog #2')
+		def status_name = 'Status_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), status_name)
 	}
 
 	@Then("I click button save status of project")
@@ -92,7 +93,7 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-berhasiltambahdata'))
 	}
-	
+
 	@When("I add data registered status of project")
 	def ClickNewDataStatus() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -106,7 +107,7 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-dataregistered'))
 	}
-	
+
 	@When("I click button edit and edit data registered status of project")
 	def ClickEditDataStatus() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
@@ -121,5 +122,4 @@ class status_of_project {
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-click_edit'))
 		WebUI.click(findTestObject('Manage Data/Status of Project/button-success_edit'))
 	}
-	
 }

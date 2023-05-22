@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_
 
 WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
 
-WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'CO Sales')
+WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), category_name)
 
 WebUI.click(findTestObject('Manage Data/Tender Type/button-save_tendertype'))
 

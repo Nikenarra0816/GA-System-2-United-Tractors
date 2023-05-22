@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
 
 WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
 
-WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Inspector Surabaya')
+WebUI.setText(findTestObject('Manage Data/Division/field-division'), division_name)
 
 WebUI.click(findTestObject('Manage Data/Division/button-save'))
 

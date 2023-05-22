@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "BA99E1AA855931855C037439606AA62A",
+  "keywordFileContentHash": "BCCF4C8FD467C49CE8BAF83F433DBB88",
   "keywordClasses": [
     {
       "name": "department.department",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

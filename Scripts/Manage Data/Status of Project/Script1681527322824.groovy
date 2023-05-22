@@ -24,7 +24,7 @@ WebUI.click(findTestObject('Manage Data/Status of Project/submenu-status_of_proj
 
 WebUI.click(findTestObject('Manage Data/Status of Project/button-add_statusofproject'))
 
-WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), 'Hold')
+WebUI.setText(findTestObject('Manage Data/Status of Project/field-input_status_project'), status_name)
 
 WebUI.click(findTestObject('Manage Data/Status of Project/button-save_statusofproject'))
 

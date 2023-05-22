@@ -84,7 +84,8 @@ class department {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Department/submenu-department'))
 		WebUI.click(findTestObject('Manage Data/Department/button-adddepartment'))
-		WebUI.setText(findTestObject('Manage Data/Department/field-department'), 'Academy Marketing')
+		def departement_name = 'Departement_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Department/field-department'), departement_name)
 	}
 
 	@Then("I click button save departement")

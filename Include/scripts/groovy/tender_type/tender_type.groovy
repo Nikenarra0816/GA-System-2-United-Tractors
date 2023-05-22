@@ -84,7 +84,8 @@ class tender_type {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/submenu-tender_type'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
-		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Tender Type Mlg')
+		def type_name = 'TypeTender_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), type_name)
 	}
 
 	@Then("I click button save tender type")

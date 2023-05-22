@@ -84,7 +84,8 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
 		WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
-		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Inspector Tasik')
+		def division_name = 'Division_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), division_name)
 	}
 
 	@Then("I click button save division")

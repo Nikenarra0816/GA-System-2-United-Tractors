@@ -84,7 +84,8 @@ class type_of_project {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-add_typeofproject'))
-		WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), 'WWW')
+		def type_name = 'Type_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Type of Project/field-type_of_project'), type_name)
 	}
 
 	@Then("I click button save type of project")

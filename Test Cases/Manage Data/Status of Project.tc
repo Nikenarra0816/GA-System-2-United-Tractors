@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d5af0f06-cd40-4b59-ae69-a49825832ff5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>efec2e1b-08da-441d-89df-482efd78187e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Status_'+ GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>efec2e1b-08da-441d-89df-482efd78187e</id>
+      <masked>false</masked>
+      <name>status_name</name>
+   </variable>
 </TestCaseEntity>

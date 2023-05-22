@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>73cc16db-8a96-49ad-9716-b6497f929d45</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5bd1e14e-785d-42ad-9c06-b4108ea22358</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Division_'+ GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>5bd1e14e-785d-42ad-9c06-b4108ea22358</id>
+      <masked>false</masked>
+      <name>division_name</name>
+   </variable>
 </TestCaseEntity>

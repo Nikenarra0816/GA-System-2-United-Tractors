@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_data_empty'))
 
 WebUI.click(findTestObject('Manage Data/Tender Type/button-cancel_tendertype'))
 
-WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Lelang')
+WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), type_name)
 
 WebUI.click(findTestObject('Manage Data/Tender Type/button-ok_succes_add_data'))
 

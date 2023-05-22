@@ -84,9 +84,11 @@ class vendor {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Vendor/submenu-vendor'))
 		WebUI.click(findTestObject('Manage Data/Vendor/button-add_vendor'))
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), 'Vendor Yura Yunita')
+		def vendor_name = 'Vendor_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-name_vendor'), vendor_name)
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-pic_vendor'), 'Yura')
-		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), 'yura@getnada.com')
+		def email_vendor = 'Vendor+' + GlobalVariable.RandomNumber + '@gmail.com'
+		WebUI.setText(findTestObject('Manage Data/Vendor/input-email_vendor'), email_vendor)
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-vendor_address'), 'Jln Yura ')
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-phone'), '081625661726')
 		WebUI.setText(findTestObject('Manage Data/Vendor/input-nama_vendor_tdd'), 'Yura')

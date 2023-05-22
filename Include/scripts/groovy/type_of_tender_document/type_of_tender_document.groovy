@@ -84,7 +84,8 @@ class type_of_tender_document {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/submenu-type_of_tender_document'))
 		WebUI.click(findTestObject('Manage Data/Type of Tender Document/button-add_type_of_tender_document'))
-		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), 'Doc United Array')
+		def tender_doc = 'Tender Document_'+ GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Type of Tender Document/field-typeoftenderdoc'), tender_doc)
 	}
 
 	@Then("I click button save type of Tender Document")

@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a58ad4ee-fbdb-424f-b936-92f7333a2cb5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d31c01ea-d219-4fb9-ae4c-8761e40f3c67</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Category Project_'+ GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>d31c01ea-d219-4fb9-ae4c-8761e40f3c67</id>
+      <masked>false</masked>
+      <name>category_name</name>
+   </variable>
 </TestCaseEntity>

@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ae6fda01-99d6-4b83-a1a7-ab9e84dd4444</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9315ef91-b6bc-4e53-8f25-f0729bd906f4</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Document_'+ GlobalVariable.RandomNumber</defaultValue>
+      <description></description>
+      <id>9315ef91-b6bc-4e53-8f25-f0729bd906f4</id>
+      <masked>false</masked>
+      <name>dnd_document</name>
+   </variable>
 </TestCaseEntity>
