@@ -6,12 +6,11 @@
    <elementGuidId>21bb051f-0cd2-4597-a29e-adb20669a57a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[11]/i[@class='fas fa-chevron-right']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[11]/i[@class='fas fa-chevron-right']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

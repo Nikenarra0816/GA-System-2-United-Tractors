@@ -97,7 +97,7 @@ class type_of_project {
 	@When("I add data registerd type of project")
 	def AddRegisteredDataCategory() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
-		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'))
 		WebUI.click(findTestObject('Manage Data/Tender Type/button-add_tendertype'))
 		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Onsite')
 	}
@@ -111,7 +111,7 @@ class type_of_project {
 	@When("I click button edit type of project")
 	def ClickEditDataProject() {
 		WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
-		WebUI.click(findTestObject('Manage Data/Category of Project/submenu-category_of_project'))
+		WebUI.click(findTestObject('Manage Data/Type of Project/submenu-type_of_project'))
 		WebUI.click(findTestObject('Manage Data/Type of Project/button-optionedit'))
 		WebUI.clearText(findTestObject('Manage Data/Type of Project/field-type_of_project'))
 		WebUI.setText(findTestObject('Manage Data/Tender Type/field-tendertype'), 'Onsite Niken')
