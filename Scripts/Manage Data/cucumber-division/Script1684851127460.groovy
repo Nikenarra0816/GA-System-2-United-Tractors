@@ -17,34 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Reuseable-test/Block-login with credential'), [('username') : 'gdsechead', ('password') : '123qwe*'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Manage Data/Division/menu-managedata'))
-
-WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-adddivision'))
-
-WebUI.setText(findTestObject('Manage Data/Division/field-division'), division_name)
-
-WebUI.click(findTestObject('Manage Data/Division/button-save'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-okberhasil'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-okwajibisi'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-okterdaftar'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-cancel'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-edit'))
-
-WebUI.click(findTestObject('Manage Data/Division/button-okedit'))
-
-WebUI.clearText(findTestObject('Manage Data/Division/field-division'))
-
-WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Product Owner')
-
-WebUI.click(findTestObject('Manage Data/Division/button-berhasiledit'))
+CucumberKW.runFeatureFile('Include/features/Division.feature')
 

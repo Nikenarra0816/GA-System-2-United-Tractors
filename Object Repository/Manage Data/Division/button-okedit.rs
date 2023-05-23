@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button-okwajibisi</name>
+   <name>button-okedit</name>
    <tag></tag>
-   <elementGuidId>86731d2c-3955-4fdb-ab6c-60282ea5e2f1</elementGuidId>
+   <elementGuidId>0b8da92d-b6b1-4fe2-b4b3-478f5db4c63e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='w-1/2 px-4 py-2 border text-sm bg-white outline-none rounded text-red-500 border-red-500']</value>
+         <value>//button[@class='w-full inline-flex justify-center py-2 px-4 border border-transparent text-sm text-white font-semibold rounded-md bg-ylw']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

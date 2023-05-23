@@ -114,12 +114,13 @@ class division {
 		WebUI.click(findTestObject('Manage Data/Division/submenu-division'))
 		WebUI.click(findTestObject('Manage Data/Division/button-edit'))
 		WebUI.clearText(findTestObject('Manage Data/Division/field-division'))
-		WebUI.setText(findTestObject('Manage Data/Division/field-division'), 'Division Product Manager')
+		def division_name = 'Divisi_' + GlobalVariable.RandomNumber
+		WebUI.setText(findTestObject('Manage Data/Division/field-division'), division_name)
 	}
 
 	@Then("I click button save edit")
 	def Saveedit() {
-		WebUI.click(findTestObject('Manage Data/Division/button-save'))
+		WebUI.click(findTestObject('Manage Data/Division/button-okedit'))
 		WebUI.click(findTestObject('Manage Data/Division/button-berhasiledit'))
 	}
 }
